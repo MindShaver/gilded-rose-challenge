@@ -41,13 +41,13 @@ jobs:
 
       - name: Install SonarCloud scanner
         if: steps.cache-sonar-scanner.outputs.cache-hit != 'true'
-        shell: powershell
+        shell: pwsh
         # The --version argument is optional. If it is omitted the latest version will be installed.
         run: |
           New-Item -Path .\.sonar\scanner -ItemType Directory
           dotnet tool update dotnet-sonarscanner --tool-path .\.sonar\scanner --version 4.8.0
       - name: Build
-        shell: powershell
+        shell: pwsh
         env:
           # Needed to get some information about the pull request, if any
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -57,5 +57,5 @@ jobs:
           # on the project dashboard in SonarCloud.
         run: |
           .\.sonar\scanner\dotnet-sonarscanner begin /k:"MindShaver_gilded-rose-challenge" /o:"mindshaver" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io"
-          dotnet build
+          dotnet build GildedRoseChallenge.sln
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
