@@ -23,3 +23,4 @@ C:\Users\minds\Desktop\gilded-rose-challenge\GildedRoseChallenge\obj\Debug\netco
 C:\Users\minds\Desktop\gilded-rose-challenge\GildedRoseChallenge\obj\Debug\netcoreapp3.1\GildedRoseChallenge.dll
 C:\Users\minds\Desktop\gilded-rose-challenge\GildedRoseChallenge\obj\Debug\netcoreapp3.1\GildedRoseChallenge.pdb
 C:\Users\minds\Desktop\gilded-rose-challenge\GildedRoseChallenge\obj\Debug\netcoreapp3.1\GildedRoseChallenge.genruntimeconfig.cache
+C:\Users\minds\Desktop\gilded-rose-challenge\GildedRoseChallenge\obj\Debug\netcoreapp3.1\GildedRoseChallenge.csprojAssemblyReference.cache
