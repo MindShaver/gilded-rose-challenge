@@ -6,7 +6,9 @@ namespace GildedRoseChallenge
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("You Shouldn't Be Seeing This");
+            Console.WriteLine("Check out the read me on how to work with this project.");
+            Console.ReadKey();
         }
     }
 }
