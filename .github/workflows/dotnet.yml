@@ -47,7 +47,7 @@ jobs:
       shell: pwsh
       run : |
         New-Item -Path coverage\ -ItemType Directory
-        dotnet tool install --global coverlet.console
+        dotnet tool install --global coverlet.console --version 1.2
 
     - name: Install SonarCloud scanner
       if: steps.cache-sonar-scanner.outputs.cache-hit != 'true'
