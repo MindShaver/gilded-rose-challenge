@@ -44,8 +44,8 @@ jobs:
       shell: pwsh
       # The --version argument is optional. If it is omitted the latest version will be installed.
       run: |
-        New-Item -Path .\.sonar-scan\scanner\ -ItemType Directory
-        dotnet tool update dotnet-sonarscanner --tool-path .\.sonar-scan\scanner --version 4.8.0
+        New-Item -Path .\.sonar-scan\scanner -ItemType Directory
+        dotnet tool update dotnet-sonarscanner --tool-path \.sonar-scan\scanner --version 4.8.0
     - name: Build
       shell: pwsh
       env:
