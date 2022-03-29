@@ -1,0 +1,7 @@
+organization=mindshaver
+projectKey=MindShaver_gilded-rose-challenge
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.27720
+dashboardUrl=https://sonarcloud.io/dashboard?id=MindShaver_gilded-rose-challenge
+ceTaskId=AX_DMXf4YZn01BNPBwPU
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AX_DMXf4YZn01BNPBwPU

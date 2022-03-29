@@ -91,7 +91,6 @@ C:\Users\minds\Desktop\gilded-rose-challenge\GildedRoseChallenge_Test\bin\Debug\
 C:\Users\minds\Desktop\gilded-rose-challenge\GildedRoseChallenge_Test\bin\Debug\net5.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
 C:\Users\minds\Desktop\gilded-rose-challenge\GildedRoseChallenge_Test\bin\Debug\net5.0\GildedRoseChallenge.dll
 C:\Users\minds\Desktop\gilded-rose-challenge\GildedRoseChallenge_Test\bin\Debug\net5.0\GildedRoseChallenge.pdb
-C:\Users\minds\Desktop\gilded-rose-challenge\GildedRoseChallenge_Test\obj\Debug\net5.0\GildedRoseChallenge_Test.csprojAssemblyReference.cache
 C:\Users\minds\Desktop\gilded-rose-challenge\GildedRoseChallenge_Test\obj\Debug\net5.0\GildedRoseChallenge_Test.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\minds\Desktop\gilded-rose-challenge\GildedRoseChallenge_Test\obj\Debug\net5.0\GildedRoseChallenge_Test.AssemblyInfoInputs.cache
 C:\Users\minds\Desktop\gilded-rose-challenge\GildedRoseChallenge_Test\obj\Debug\net5.0\GildedRoseChallenge_Test.AssemblyInfo.cs
@@ -101,3 +100,7 @@ C:\Users\minds\Desktop\gilded-rose-challenge\GildedRoseChallenge_Test\obj\Debug\
 C:\Users\minds\Desktop\gilded-rose-challenge\GildedRoseChallenge_Test\obj\Debug\net5.0\ref\GildedRoseChallenge_Test.dll
 C:\Users\minds\Desktop\gilded-rose-challenge\GildedRoseChallenge_Test\obj\Debug\net5.0\GildedRoseChallenge_Test.pdb
 C:\Users\minds\Desktop\gilded-rose-challenge\GildedRoseChallenge_Test\obj\Debug\net5.0\GildedRoseChallenge_Test.genruntimeconfig.cache
+C:\Users\minds\Desktop\gilded-rose-challenge\GildedRoseChallenge_Test\bin\Debug\net5.0\GildedRoseChallenge.deps.json
+C:\Users\minds\Desktop\gilded-rose-challenge\GildedRoseChallenge_Test\bin\Debug\net5.0\GildedRoseChallenge.runtimeconfig.json
+C:\Users\minds\Desktop\gilded-rose-challenge\GildedRoseChallenge_Test\bin\Debug\net5.0\GildedRoseChallenge.runtimeconfig.dev.json
+C:\Users\minds\Desktop\gilded-rose-challenge\GildedRoseChallenge_Test\obj\Debug\net5.0\GildedRoseChallenge_Test.csproj.AssemblyReference.cache

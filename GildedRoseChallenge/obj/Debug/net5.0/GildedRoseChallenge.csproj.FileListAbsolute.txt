@@ -5,7 +5,6 @@ C:\Users\minds\Desktop\gilded-rose-challenge\GildedRoseChallenge\bin\Debug\net5.
 C:\Users\minds\Desktop\gilded-rose-challenge\GildedRoseChallenge\bin\Debug\net5.0\GildedRoseChallenge.dll
 C:\Users\minds\Desktop\gilded-rose-challenge\GildedRoseChallenge\bin\Debug\net5.0\ref\GildedRoseChallenge.dll
 C:\Users\minds\Desktop\gilded-rose-challenge\GildedRoseChallenge\bin\Debug\net5.0\GildedRoseChallenge.pdb
-C:\Users\minds\Desktop\gilded-rose-challenge\GildedRoseChallenge\obj\Debug\net5.0\GildedRoseChallenge.csprojAssemblyReference.cache
 C:\Users\minds\Desktop\gilded-rose-challenge\GildedRoseChallenge\obj\Debug\net5.0\GildedRoseChallenge.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\minds\Desktop\gilded-rose-challenge\GildedRoseChallenge\obj\Debug\net5.0\GildedRoseChallenge.AssemblyInfoInputs.cache
 C:\Users\minds\Desktop\gilded-rose-challenge\GildedRoseChallenge\obj\Debug\net5.0\GildedRoseChallenge.AssemblyInfo.cs
@@ -14,3 +13,4 @@ C:\Users\minds\Desktop\gilded-rose-challenge\GildedRoseChallenge\obj\Debug\net5.
 C:\Users\minds\Desktop\gilded-rose-challenge\GildedRoseChallenge\obj\Debug\net5.0\ref\GildedRoseChallenge.dll
 C:\Users\minds\Desktop\gilded-rose-challenge\GildedRoseChallenge\obj\Debug\net5.0\GildedRoseChallenge.pdb
 C:\Users\minds\Desktop\gilded-rose-challenge\GildedRoseChallenge\obj\Debug\net5.0\GildedRoseChallenge.genruntimeconfig.cache
+C:\Users\minds\Desktop\gilded-rose-challenge\GildedRoseChallenge\obj\Debug\net5.0\GildedRoseChallenge.csproj.AssemblyReference.cache

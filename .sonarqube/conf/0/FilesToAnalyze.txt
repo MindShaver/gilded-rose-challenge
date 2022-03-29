@@ -1,0 +1,2 @@
+﻿C:\Users\minds\Desktop\gilded-rose-challenge\GildedRoseChallenge\Engine\GildedRose.cs
+C:\Users\minds\Desktop\gilded-rose-challenge\GildedRoseChallenge\Program.cs
