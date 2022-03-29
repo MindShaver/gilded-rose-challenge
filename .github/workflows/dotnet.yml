@@ -26,7 +26,7 @@ jobs:
     - name: Cache SonarCloud workspace
       uses: actions/cache@v1
       with:
-        path: ~\.sonar\cache
+        path: ~\sonar-scan\cache
         key: ${{ runner.os }}-sonar-cache
         restore-keys: ${{ runner.os }}-sonar-cache
 
@@ -35,7 +35,7 @@ jobs:
       id: cache-sonar-scanner
       uses: actions/cache@v1
       with:
-        path: .\.sonar\scanner
+        path: ~\sonar-scan\scanner
         key: ${{ runner.os }}-sonar-scanner
         restore-keys: ${{ runner.os }}-sonar-scanner
 
@@ -45,7 +45,7 @@ jobs:
       # The --version argument is optional. If it is omitted the latest version will be installed.
       run: |
         New-Item -Path .\.sonar-scan\scanner -ItemType Directory
-        dotnet tool update dotnet-sonarscanner --tool-path \.sonar-scan\scanner --version 4.8.0
+        dotnet tool update dotnet-sonarscanner --tool-path sonar-scan\scanner --version 4.8.0
     - name: Build
       shell: pwsh
       env:
@@ -56,6 +56,6 @@ jobs:
         # The organization and project arguments (see /o and /k) are displayed
         # on the project dashboard in SonarCloud.
       run: |
-        .\.sonar-scan\scanner\dotnet-sonarscanner begin /k:"MindShaver_gilded-rose-challenge" /o:"mindshaver" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io"
+        .sonar-scan\scanner\dotnet-sonarscanner begin /k:"MindShaver_gilded-rose-challenge" /o:"mindshaver" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io"
         dotnet build
-        .\.sonar-scan\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}" 
+        sonar-scan\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}" 
