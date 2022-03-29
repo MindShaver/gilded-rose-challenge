@@ -1,3 +1,11 @@
-Y
-GildedRoseChallenge.Programobject2
-	Program()%GildedRoseChallenge.Program.Program()
+û
+GildedRoseChallenge.Itemobject)
+Item()GildedRoseChallenge.Item.Item()-
+Name.get!GildedRoseChallenge.Item.Name.get-
+Name.set!GildedRoseChallenge.Item.Name.set1
+
+SellIn.get#GildedRoseChallenge.Item.SellIn.get1
+
+SellIn.set#GildedRoseChallenge.Item.SellIn.set3
+Quality.get$GildedRoseChallenge.Item.Quality.get3
+Quality.set$GildedRoseChallenge.Item.Quality.set

@@ -6,7 +6,7 @@
   <SonarScannerWorkingDirectory>C:\Users\minds\Desktop\gilded-rose-challenge</SonarScannerWorkingDirectory>
   <HasBeginStepCommandLineCredentials>false</HasBeginStepCommandLineCredentials>
   <SonarQubeHostUrl>https://sonarcloud.io</SonarQubeHostUrl>
-  <SonarQubeVersion>8.0.0.27720</SonarQubeVersion>
+  <SonarQubeVersion>8.0.0.27934</SonarQubeVersion>
   <SonarProjectKey>MindShaver_gilded-rose-challenge</SonarProjectKey>
   <AdditionalConfig>
     <ConfigSetting Id="BuildUri" />
@@ -133,11 +133,9 @@
     <Property Name="node_10_grace_period_termination_date">1621814400000</Property>
     <Property Name="sonar.global.exclusions">**/build-wrapper-dump.json</Property>
     <Property Name="sonar.maintenance_mode.link">https://sonarcloud.statuspage.io/incidents/66vlr4dc3jwy</Property>
-    <Property Name="sonar.maintenance_mode.message">SonarCloud will undergo maintenance on Saturday, March 26th.
-The service will not be available between 6:15 and 9:00 CET
-The service will be partially available between 9:00 and 23:00 CET. During that period, results of analyses performed prior to 6:15 may not be available. Results of analysis performed after 9:00 will be available.</Property>
-    <Property Name="sonar.maintenance_mode.start_date">3/28/2022 12:15:00 AM</Property>
-    <Property Name="sonar.core.startTime">3/22/2022 2:28:30 AM</Property>
+    <Property Name="sonar.maintenance_mode.message">Results of analyses performed prior to 6:15am CET may not be available yet and will be progressively provided throughout coming hours. Results of analysis performed after 8:00am CET are available.</Property>
+    <Property Name="sonar.maintenance_mode.start_date">3/26/2022 5:00:00 PM</Property>
+    <Property Name="sonar.core.startTime">3/29/2022 8:50:49 AM</Property>
   </ServerSettings>
   <LocalSettings>
     <Property Name="sonar.host.url">https://sonarcloud.io</Property>
