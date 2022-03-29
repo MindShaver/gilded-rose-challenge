@@ -42,6 +42,12 @@ jobs:
         path: ~\sonar-scan\scanner
         key: ${{ runner.os }}-sonar-scanner
         restore-keys: ${{ runner.os }}-sonar-scanner
+    
+    - name: Install Coverlet
+      shell: pwsh
+      run : |
+        New-Item -Path coverage\ -ItemType Directory
+        dotnet tool install --global coverlet.console
 
     - name: Install SonarCloud scanner
       if: steps.cache-sonar-scanner.outputs.cache-hit != 'true'
@@ -60,7 +66,7 @@ jobs:
         # The organization and project arguments (see /o and /k) are displayed
         # on the project dashboard in SonarCloud.
       run: |
-        .\sonar-scan\scanner\dotnet-sonarscanner begin /k:"MindShaver_gilded-rose-challenge" /o:"mindshaver" /d:sonar.login="${{secrets.SONAR_TOKEN}}" /d:sonar.host.url="https://sonarcloud.io"
+        .\sonar-scan\scanner\dotnet-sonarscanner begin /k:"MindShaver_gilded-rose-challenge" /o:"mindshaver" /d:sonar.login="${{secrets.SONAR_TOKEN}}" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.cs.opencover.reportsPaths=/coverage.opencover.xml
         dotnet build
         dotnet test
         .\sonar-scan\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}" 
