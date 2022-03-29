@@ -139,6 +139,7 @@
   </ServerSettings>
   <LocalSettings>
     <Property Name="sonar.host.url">https://sonarcloud.io</Property>
+    <Property Name="sonar.cs.opencover.reportsPaths">GildedRoseChallenge_Test\coverage.opencover.xml</Property>
     <Property Name="sonar.organization">mindshaver</Property>
   </LocalSettings>
   <AnalyzersSettings>

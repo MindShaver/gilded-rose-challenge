@@ -76,6 +76,7 @@ namespace GildedRoseChallenge
                             {
                                 item.Quality = item.Quality - 1;
                             }
+
                         }
                     }
                     else

@@ -12,27 +12,6 @@
       },
       "results": [
         {
-          "ruleId": "S1118",
-          "level": "warning",
-          "message": "Add a 'protected' constructor or the 'static' keyword to the class declaration.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/minds/Desktop/gilded-rose-challenge/GildedRoseChallenge/Program.cs",
-                "region": {
-                  "startLine": 5,
-                  "startColumn": 18,
-                  "endLine": 5,
-                  "endColumn": 25
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
           "ruleId": "S2933",
           "level": "warning",
           "message": "Make 'Items' 'readonly'.",
@@ -54,6 +33,27 @@
           }
         },
         {
+          "ruleId": "S1118",
+          "level": "warning",
+          "message": "Add a 'protected' constructor or the 'static' keyword to the class declaration.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/minds/Desktop/gilded-rose-challenge/GildedRoseChallenge/Program.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 18,
+                  "endLine": 5,
+                  "endColumn": 25
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
           "ruleId": "S1764",
           "level": "warning",
           "message": "Correct one of the identical expressions on both sides of operator '-'.",
@@ -62,10 +62,10 @@
               "resultFile": {
                 "uri": "file:///C:/Users/minds/Desktop/gilded-rose-challenge/GildedRoseChallenge/Engine/GildedRose.cs",
                 "region": {
-                  "startLine": 77,
-                  "startColumn": 67,
-                  "endLine": 77,
-                  "endColumn": 83
+                  "startLine": 83,
+                  "startColumn": 55,
+                  "endLine": 83,
+                  "endColumn": 67
                 }
               }
             }
@@ -75,10 +75,10 @@
               "physicalLocation": {
                 "uri": "file:///C:/Users/minds/Desktop/gilded-rose-challenge/GildedRoseChallenge/Engine/GildedRose.cs",
                 "region": {
-                  "startLine": 77,
-                  "startColumn": 48,
-                  "endLine": 77,
-                  "endColumn": 64
+                  "startLine": 83,
+                  "startColumn": 40,
+                  "endLine": 83,
+                  "endColumn": 52
                 }
               }
             }
@@ -90,7 +90,128 @@
         {
           "ruleId": "S3776",
           "level": "warning",
-          "message": "Refactor this method to reduce its Cognitive Complexity from 69 to the 15 allowed.",
+          "message": "Refactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/minds/Desktop/gilded-rose-challenge/GildedRoseChallenge/Engine/GildedRose.cs",
+                "region": {
+                  "startLine": 65,
+                  "startColumn": 21,
+                  "endLine": 65,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/minds/Desktop/gilded-rose-challenge/GildedRoseChallenge/Engine/GildedRose.cs",
+                "region": {
+                  "startLine": 67,
+                  "startColumn": 13,
+                  "endLine": 67,
+                  "endColumn": 15
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/minds/Desktop/gilded-rose-challenge/GildedRoseChallenge/Engine/GildedRose.cs",
+                "region": {
+                  "startLine": 69,
+                  "startColumn": 17,
+                  "endLine": 69,
+                  "endColumn": 19
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/minds/Desktop/gilded-rose-challenge/GildedRoseChallenge/Engine/GildedRose.cs",
+                "region": {
+                  "startLine": 71,
+                  "startColumn": 21,
+                  "endLine": 71,
+                  "endColumn": 23
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/minds/Desktop/gilded-rose-challenge/GildedRoseChallenge/Engine/GildedRose.cs",
+                "region": {
+                  "startLine": 73,
+                  "startColumn": 25,
+                  "endLine": 73,
+                  "endColumn": 27
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/minds/Desktop/gilded-rose-challenge/GildedRoseChallenge/Engine/GildedRose.cs",
+                "region": {
+                  "startLine": 75,
+                  "startColumn": 29,
+                  "endLine": 75,
+                  "endColumn": 31
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/minds/Desktop/gilded-rose-challenge/GildedRoseChallenge/Engine/GildedRose.cs",
+                "region": {
+                  "startLine": 81,
+                  "startColumn": 21,
+                  "endLine": 81,
+                  "endColumn": 25
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/minds/Desktop/gilded-rose-challenge/GildedRoseChallenge/Engine/GildedRose.cs",
+                "region": {
+                  "startLine": 86,
+                  "startColumn": 17,
+                  "endLine": 86,
+                  "endColumn": 21
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/minds/Desktop/gilded-rose-challenge/GildedRoseChallenge/Engine/GildedRose.cs",
+                "region": {
+                  "startLine": 88,
+                  "startColumn": 21,
+                  "endLine": 88,
+                  "endColumn": 23
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "+1",
+              "1": "+2 (incl 1 for nesting)",
+              "2": "+3 (incl 2 for nesting)",
+              "3": "+4 (incl 3 for nesting)",
+              "4": "+5 (incl 4 for nesting)",
+              "5": "+1",
+              "6": "+1",
+              "7": "+3 (incl 2 for nesting)"
+            }
+          }
+        },
+        {
+          "ruleId": "S3776",
+          "level": "warning",
+          "message": "Refactor this method to reduce its Cognitive Complexity from 43 to the 15 allowed.",
           "locations": [
             {
               "resultFile": {
@@ -247,94 +368,6 @@
                   "endColumn": 19
                 }
               }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/minds/Desktop/gilded-rose-challenge/GildedRoseChallenge/Engine/GildedRose.cs",
-                "region": {
-                  "startLine": 61,
-                  "startColumn": 17,
-                  "endLine": 61,
-                  "endColumn": 19
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/minds/Desktop/gilded-rose-challenge/GildedRoseChallenge/Engine/GildedRose.cs",
-                "region": {
-                  "startLine": 63,
-                  "startColumn": 21,
-                  "endLine": 63,
-                  "endColumn": 23
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/minds/Desktop/gilded-rose-challenge/GildedRoseChallenge/Engine/GildedRose.cs",
-                "region": {
-                  "startLine": 65,
-                  "startColumn": 25,
-                  "endLine": 65,
-                  "endColumn": 27
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/minds/Desktop/gilded-rose-challenge/GildedRoseChallenge/Engine/GildedRose.cs",
-                "region": {
-                  "startLine": 67,
-                  "startColumn": 29,
-                  "endLine": 67,
-                  "endColumn": 31
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/minds/Desktop/gilded-rose-challenge/GildedRoseChallenge/Engine/GildedRose.cs",
-                "region": {
-                  "startLine": 69,
-                  "startColumn": 33,
-                  "endLine": 69,
-                  "endColumn": 35
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/minds/Desktop/gilded-rose-challenge/GildedRoseChallenge/Engine/GildedRose.cs",
-                "region": {
-                  "startLine": 75,
-                  "startColumn": 25,
-                  "endLine": 75,
-                  "endColumn": 29
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/minds/Desktop/gilded-rose-challenge/GildedRoseChallenge/Engine/GildedRose.cs",
-                "region": {
-                  "startLine": 80,
-                  "startColumn": 21,
-                  "endLine": 80,
-                  "endColumn": 25
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/minds/Desktop/gilded-rose-challenge/GildedRoseChallenge/Engine/GildedRose.cs",
-                "region": {
-                  "startLine": 82,
-                  "startColumn": 25,
-                  "endLine": 82,
-                  "endColumn": 27
-                }
-              }
             }
           ],
           "properties": {
@@ -345,15 +378,7 @@
               "10": "+5 (incl 4 for nesting)",
               "11": "+6 (incl 5 for nesting)",
               "12": "+2 (incl 1 for nesting)",
-              "13": "+2 (incl 1 for nesting)",
-              "14": "+3 (incl 2 for nesting)",
-              "15": "+4 (incl 3 for nesting)",
-              "16": "+5 (incl 4 for nesting)",
-              "17": "+6 (incl 5 for nesting)",
-              "18": "+1",
-              "19": "+1",
               "2": "+1",
-              "20": "+4 (incl 3 for nesting)",
               "3": "+3 (incl 2 for nesting)",
               "4": "+4 (incl 3 for nesting)",
               "5": "+1",
@@ -362,6 +387,40 @@
               "8": "+5 (incl 4 for nesting)",
               "9": "+6 (incl 5 for nesting)"
             }
+          }
+        },
+        {
+          "ruleId": "S1066",
+          "level": "warning",
+          "message": "Merge this if statement with the enclosing one.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/minds/Desktop/gilded-rose-challenge/GildedRoseChallenge/Engine/GildedRose.cs",
+                "region": {
+                  "startLine": 75,
+                  "startColumn": 29,
+                  "endLine": 75,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/minds/Desktop/gilded-rose-challenge/GildedRoseChallenge/Engine/GildedRose.cs",
+                "region": {
+                  "startLine": 73,
+                  "startColumn": 25,
+                  "endLine": 73,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
           }
         },
         {
@@ -467,30 +526,17 @@
           }
         },
         {
-          "ruleId": "S1066",
-          "level": "warning",
-          "message": "Merge this if statement with the enclosing one.",
+          "ruleId": "CA1822",
+          "level": "note",
+          "message": "Member 'FinalCheck' does not access instance data and can be marked as static",
           "locations": [
             {
               "resultFile": {
                 "uri": "file:///C:/Users/minds/Desktop/gilded-rose-challenge/GildedRoseChallenge/Engine/GildedRose.cs",
                 "region": {
-                  "startLine": 69,
-                  "startColumn": 33,
-                  "endLine": 69,
-                  "endColumn": 35
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/minds/Desktop/gilded-rose-challenge/GildedRoseChallenge/Engine/GildedRose.cs",
-                "region": {
-                  "startLine": 67,
-                  "startColumn": 29,
-                  "endLine": 67,
+                  "startLine": 65,
+                  "startColumn": 21,
+                  "endLine": 65,
                   "endColumn": 31
                 }
               }
@@ -502,6 +548,22 @@
         }
       ],
       "rules": {
+        "CA1822": {
+          "id": "CA1822",
+          "shortDescription": "Mark members as static",
+          "fullDescription": "Members that do not access instance data or call instance methods can be marked as static. After you mark the methods as static, the compiler will emit nonvirtual call sites to these members. This can give you a measurable performance gain for performance-sensitive code.",
+          "defaultLevel": "note",
+          "helpUri": "https://docs.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1822",
+          "properties": {
+            "category": "Performance",
+            "isEnabledByDefault": true,
+            "tags": [
+              "PortedFromFxCop",
+              "Telemetry",
+              "EnabledRuleInAggressiveMode"
+            ]
+          }
+        },
         "S1066": {
           "id": "S1066",
           "shortDescription": "Collapsible \"if\" statements should be merged",

@@ -5,3 +5,4 @@ C:\Users\minds\.nuget\packages\microsoft.testplatform.testhost\16.7.1\build\netc
 C:\Users\minds\.nuget\packages\xunit.runner.visualstudio\2.4.3\build\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
 C:\Users\minds\.nuget\packages\xunit.runner.visualstudio\2.4.3\build\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
 C:\Users\minds\.nuget\packages\xunit.runner.visualstudio\2.4.3\build\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll
+C:\Users\minds\Desktop\gilded-rose-challenge\GildedRoseChallenge_Test\TestResults\9ff2b9a9-0870-4d88-88b8-c72b228e1efe\coverage.cobertura.xml

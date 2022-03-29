@@ -1,3 +1,5 @@
-Y
-GildedRoseChallenge.Programobject2
-	Program()%GildedRoseChallenge.Program.Program()
+Š
+GildedRoseChallenge.GildedRoseobject¯
+FGildedRose(System.Collections.Generic.IList<GildedRoseChallenge.Item>)eGildedRoseChallenge.GildedRose.GildedRose(System.Collections.Generic.IList<GildedRoseChallenge.Item>)A
+UpdateQuality().GildedRoseChallenge.GildedRose.UpdateQuality()k
+$FinalCheck(GildedRoseChallenge.Item)CGildedRoseChallenge.GildedRose.FinalCheck(GildedRoseChallenge.Item)
