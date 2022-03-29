@@ -66,7 +66,7 @@ jobs:
         # The organization and project arguments (see /o and /k) are displayed
         # on the project dashboard in SonarCloud.
       run: |
-        .\sonar-scan\scanner\dotnet-sonarscanner begin /k:"MindShaver_gilded-rose-challenge" /o:"mindshaver" /d:sonar.login="${{secrets.SONAR_TOKEN}}" /d:sonar.cs.opencover.reportsPaths=.\**\*.opencover.xml\
+        .\sonar-scan\scanner\dotnet-sonarscanner begin /k:"MindShaver_gilded-rose-challenge" /o:"mindshaver" /d:sonar.login="${{secrets.SONAR_TOKEN}}" /d:sonar.cs.opencover.reportsPaths=".\**\*.opencover.xml\"
         dotnet build
         dotnet test /p:CollectCoverage=true
         .\sonar-scan\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}" 
