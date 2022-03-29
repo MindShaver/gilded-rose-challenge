@@ -19,6 +19,7 @@ jobs:
         dotnet-version: | 
           3.1.x
           5.0.x
+        fetch-depth: 0
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
