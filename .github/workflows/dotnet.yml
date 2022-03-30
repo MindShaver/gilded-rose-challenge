@@ -68,5 +68,5 @@ jobs:
         .\sonar-scan\scanner\dotnet-sonarscanner begin /k:"MindShaver_gilded-rose-challenge" /o:"mindshaver" /d:sonar.login="${{secrets.SONAR_TOKEN}}" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.coverageReportPaths=".\sonarqubecoverage\SonarQube.xml"
         dotnet build
         dotnet test --no-build --collect:"XPlat Code Coverage" -- DataCollectionRunSettings.DataCollectors.DataCollector.Configuration.Format=opencover
-        reportgenerator "-reports:.\TestResults\**\coverage.cobertura.xml" "-targetdir:sonarqubecoverage" "-reporttypes:SonarQube"
+        reportgenerator "-reports:/home/runner/work/gilded-rose-challenge/gilded-rose-challenge/GildedRoseChallenge_Test/TestResults/*/coverage.opencover.xml" "-targetdir:sonarqubecoverage" "-reporttypes:SonarQube"
         .\sonar-scan\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}" 
