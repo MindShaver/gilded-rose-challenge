@@ -13,4 +13,3 @@ C:\Users\minds\Desktop\gilded-rose-challenge\GildedRoseChallenge\obj\Debug\net5.
 C:\Users\minds\Desktop\gilded-rose-challenge\GildedRoseChallenge\obj\Debug\net5.0\ref\GildedRoseChallenge.dll
 C:\Users\minds\Desktop\gilded-rose-challenge\GildedRoseChallenge\obj\Debug\net5.0\GildedRoseChallenge.pdb
 C:\Users\minds\Desktop\gilded-rose-challenge\GildedRoseChallenge\obj\Debug\net5.0\GildedRoseChallenge.genruntimeconfig.cache
-C:\Users\minds\Desktop\gilded-rose-challenge\GildedRoseChallenge\obj\Debug\net5.0\GildedRoseChallenge.csproj.AssemblyReference.cache
