@@ -26,7 +26,7 @@ namespace GildedRoseChallenge_Test.Engine
 
             var actualQuality = items.First().Quality;
 
-            Assert.Equal(expectedQuality, actualQuality);
+            Assert.Equal(expectedQuality + 1, actualQuality);
 
         }
     }
