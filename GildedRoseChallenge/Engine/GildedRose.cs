@@ -53,6 +53,8 @@ namespace GildedRoseChallenge
                     }
                 }
 
+                FinalCheck(Items[i]);
+
                
                 }
             }
