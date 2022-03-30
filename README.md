@@ -5,12 +5,21 @@
 ### What you'll need
 
 * Visual Studio
+* Your favorite test runner (Or Visual Studios built-in runner)
 
 ### The Challenge:
 
 - Complete the User Story (US897387)
 - Resolve the Defect (DE783598)
 - Create a PR with a passing build
+
+### How To Use This Project
+
+- Clone the repository and create a new branch using the template `solution/${last name}-attempt-${favorite animal}`
+- The Gilded Rose's system can only be used through **Tests**
+- Leeroy added one test to show how the system is used
+- Once you create a PR GitHub Actions will analyze your code using SonarCloud
+- Visit the SonarCloud Dashboard by clicking the "Build Status" above
 
 ### Description
 
