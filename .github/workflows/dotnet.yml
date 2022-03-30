@@ -43,11 +43,10 @@ jobs:
         key: ${{ runner.os }}-sonar-scanner
         restore-keys: ${{ runner.os }}-sonar-scanner
     
-    - name: Install Coverlet
+    - name: Install Report Generator
       shell: pwsh
       run : |
-        New-Item -Path coverage\ -ItemType Directory
-        dotnet tool install --global coverlet.console
+        dotnet tool update dotnet-reportgenerator-globaltool -g --version 4.8.7
 
     - name: Install SonarCloud scanner
       if: steps.cache-sonar-scanner.outputs.cache-hit != 'true'
@@ -66,6 +65,8 @@ jobs:
         # The organization and project arguments (see /o and /k) are displayed
         # on the project dashboard in SonarCloud.
       run: |
-        .\sonar-scan\scanner\dotnet-sonarscanner begin /k:"MindShaver_gilded-rose-challenge" /o:"mindshaver" /d:sonar.login="${{secrets.SONAR_TOKEN}}" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.cs.opencover.reportsPaths="**/*.coveragexml"
+        .\sonar-scan\scanner\dotnet-sonarscanner begin /k:"MindShaver_gilded-rose-challenge" /o:"mindshaver" /d:sonar.login="${{secrets.SONAR_TOKEN}}" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.coverageReportPaths=".\sonarqubecoverage\SonarQube.xml"
         dotnet build
+        dotnet test --no-build --collect:"XPlat Code Coverage"
+        reportgenerator "-reports:*\TestResults\*\coverage.cobertura.xml" "-targetdir:sonarqubecoverage" "-reporttypes:SonarQube"
         .\sonar-scan\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}" 
