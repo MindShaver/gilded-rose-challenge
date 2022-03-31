@@ -1,7 +1,9 @@
 ﻿using System;
+using System.Diagnostics.CodeAnalysis;
 
 namespace GildedRoseChallenge
 {
+    [ExcludeFromCodeCoverage]
     public class Program
     {
         static void Main(string[] args)
