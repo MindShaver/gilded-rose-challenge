@@ -5570,11 +5570,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\NashStokes\\RiderProjects\\gilded-rose-challenge\\GildedRoseChallenge_Test\\GildedRoseChallenge_Test.csproj",
+      "projectUniqueName": "C:\\Users\\NashStokes\\Source\\Repos\\gilded-rose-challenge\\GildedRoseChallenge_Test\\GildedRoseChallenge_Test.csproj",
       "projectName": "GildedRoseChallenge_Test",
-      "projectPath": "C:\\Users\\NashStokes\\RiderProjects\\gilded-rose-challenge\\GildedRoseChallenge_Test\\GildedRoseChallenge_Test.csproj",
+      "projectPath": "C:\\Users\\NashStokes\\Source\\Repos\\gilded-rose-challenge\\GildedRoseChallenge_Test\\GildedRoseChallenge_Test.csproj",
       "packagesPath": "C:\\Users\\NashStokes\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\NashStokes\\RiderProjects\\gilded-rose-challenge\\GildedRoseChallenge_Test\\obj\\",
+      "outputPath": "C:\\Users\\NashStokes\\Source\\Repos\\gilded-rose-challenge\\GildedRoseChallenge_Test\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\NashStokes\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5585,14 +5585,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://nexus.integrate.ninja/": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\NashStokes\\RiderProjects\\gilded-rose-challenge\\GildedRoseChallenge\\GildedRoseChallenge.csproj": {
-              "projectPath": "C:\\Users\\NashStokes\\RiderProjects\\gilded-rose-challenge\\GildedRoseChallenge\\GildedRoseChallenge.csproj"
+            "C:\\Users\\NashStokes\\Source\\Repos\\gilded-rose-challenge\\GildedRoseChallenge\\GildedRoseChallenge.csproj": {
+              "projectPath": "C:\\Users\\NashStokes\\Source\\Repos\\gilded-rose-challenge\\GildedRoseChallenge\\GildedRoseChallenge.csproj"
             }
           }
         }
@@ -5638,6 +5638,20 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[5.0.0, 5.0.0]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[5.0.0, 5.0.0]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[5.0.0, 5.0.0]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"

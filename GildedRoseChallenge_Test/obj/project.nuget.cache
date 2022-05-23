@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iSkkz9px50NdmweGmFEhhR/7GP76MIaMPxe3N9fhTeVS4kGvN2Hf7CxAHm/MolJxPAtnAFRa3uiSFbWZ/67ZNA==",
+  "dgSpecHash": "7SDjfVJcprzsGN105Xxx2/RXbTPYea9ycT5L/tchikU3wBKME0r2+RqGz59RxwuHJMrSFZ0HZJMW+4xbMCBGVw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\NashStokes\\RiderProjects\\gilded-rose-challenge\\GildedRoseChallenge_Test\\GildedRoseChallenge_Test.csproj",
+  "projectFilePath": "C:\\Users\\NashStokes\\Source\\Repos\\gilded-rose-challenge\\GildedRoseChallenge_Test\\GildedRoseChallenge_Test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\NashStokes\\.nuget\\packages\\coverlet.collector\\1.3.0\\coverlet.collector.1.3.0.nupkg.sha512",
     "C:\\Users\\NashStokes\\.nuget\\packages\\microsoft.codecoverage\\16.7.1\\microsoft.codecoverage.16.7.1.nupkg.sha512",
@@ -94,7 +94,10 @@
     "C:\\Users\\NashStokes\\.nuget\\packages\\xunit.core\\2.4.1\\xunit.core.2.4.1.nupkg.sha512",
     "C:\\Users\\NashStokes\\.nuget\\packages\\xunit.extensibility.core\\2.4.1\\xunit.extensibility.core.2.4.1.nupkg.sha512",
     "C:\\Users\\NashStokes\\.nuget\\packages\\xunit.extensibility.execution\\2.4.1\\xunit.extensibility.execution.2.4.1.nupkg.sha512",
-    "C:\\Users\\NashStokes\\.nuget\\packages\\xunit.runner.visualstudio\\2.4.3\\xunit.runner.visualstudio.2.4.3.nupkg.sha512"
+    "C:\\Users\\NashStokes\\.nuget\\packages\\xunit.runner.visualstudio\\2.4.3\\xunit.runner.visualstudio.2.4.3.nupkg.sha512",
+    "C:\\Users\\NashStokes\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\NashStokes\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\NashStokes\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }

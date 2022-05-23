@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "DdAAKAodw4RXDYbLSLEpkFraR2XYJXvVGuksPGeAFmTORhxZN2RgUTqozek9HXJbkkFj87Pn4K9sX28GJA64zg==",
+  "dgSpecHash": "6SgXL1AO0W6qn46fFApGD7jMDSAxLNow1vVF8sK5pG3CGrF52xG//rnjK6gZSxOyWOs0W4sUbqsEZ+1FTCjhfA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\NashStokes\\RiderProjects\\gilded-rose-challenge\\GildedRoseChallenge\\GildedRoseChallenge.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\NashStokes\\Source\\Repos\\gilded-rose-challenge\\GildedRoseChallenge\\GildedRoseChallenge.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\NashStokes\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512",
+    "C:\\Users\\NashStokes\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\NashStokes\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\NashStokes\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
