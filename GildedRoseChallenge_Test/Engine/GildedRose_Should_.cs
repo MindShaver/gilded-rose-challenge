@@ -41,7 +41,8 @@ namespace GildedRoseChallenge_Test.Engine
             {  
                 Name = "Basic Item",  
                 Quality = testQuality,  
-                SellIn = testSellin  
+                SellIn = testSellin
+                
             };  
   
             var items = new List<Item> { testItem };  
