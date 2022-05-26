@@ -28,5 +28,32 @@ namespace GildedRoseChallenge_Test.Engine
 
             Assert.Equal(expectedQuality + 1, actualQuality);
         }
+        
+        [Fact]  
+        public void Update_The_Quality_Of_An_Item_To_Decrease_With_Time()  
+        {  
+            var testQuality = 10;  
+            var expectedQuality = testQuality - 1;  
+            var testSellin = 10;  
+            var expectedSellin = testSellin - 1;  
+      
+            Item testItem = new Item  
+            {  
+                Name = "Basic Item",  
+                Quality = testQuality,  
+                SellIn = testSellin  
+            };  
+  
+            var items = new List<Item> { testItem };  
+  
+            var engine = new GildedRose(items);  
+            engine.UpdateQuality();  
+  
+            var actualQuality = items.First().Quality;  
+            var actualSellin = items.First().SellIn;  
+  
+            Assert.Equal(expectedQuality, actualQuality);  
+            Assert.Equal(expectedSellin, actualSellin);  
+        }
     }
 }
