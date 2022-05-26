@@ -9,6 +9,8 @@
 *.user
 *.userosscache
 *.sln.docstates
+GildedRoseChallenge_Test/obj/**/*
+GildedRoseChallenge_Test/bin/**/*
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
