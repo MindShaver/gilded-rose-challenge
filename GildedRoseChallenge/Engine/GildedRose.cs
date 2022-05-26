@@ -1,74 +1,93 @@
 ﻿using System.Collections.Generic;
 
-namespace GildedRoseChallenge.Engine
+namespace GildedRoseChallenge
 {
     public class GildedRose
     {
-        private readonly IList<Item> _items;
+        IList<Item> Items;
 
-        public GildedRose(IList<Item> items)
+        public GildedRose(IList<Item> Items)
         {
-            this._items = items;
+            this.Items = Items;
         }
 
         public void UpdateQuality()
         {
-            foreach (var t in _items)
+
+            for (var i = 0; i < Items.Count; i++)
             {
-                if (t.Name == "Aged Brie")
+                if (Items[i].Name != "Aged Brie" && Items[i].Name != "Backstage passes to a TAFKAL80ETC concert")
                 {
-                    UpdateAgedBrie(t);
+                    if (Items[i].Quality > 0)
+                    {
+                        if (Items[i].Name != "Sulfuras, Hand of Ragnaros")
+                        {
+                            Items[i].Quality = Items[i].Quality + 1;
+                        }
+                    }
                 }
-                else if (t.Name == "Backstage passes to a TAFKAL80ETC concert")
+                else
                 {
-                    UpdateBackstagePass(t);
+                    if (Items[i].Quality < 50)
+                    {
+                        Items[i].Quality = Items[i].Quality + 1;
+
+                        if (Items[i].Name == "Backstage passes to a TAFKAL80ETC concert")
+                        {
+                            if (Items[i].SellIn < 11)
+                            {
+                                if (Items[i].Quality < 50)
+                                {
+                                    Items[i].Quality = Items[i].Quality + 1;
+                                }
+                            }
+
+                            if (Items[i].SellIn < 6)
+                            {
+                                if (Items[i].Quality < 50)
+                                {
+                                    Items[i].Quality = Items[i].Quality + 1;
+                                }
+                            }
+                        }
+                    }
                 }
-                else if (t.Name != "Sulfuras, Hand of Ragnaros")
+
+                if (Items[i].Name != "Sulfuras, Hand of Ragnaros")
                 {
-                    UpdateNormalItem(t);
+                    Items[i].SellIn = Items[i].SellIn - 1;
+                }
+
+                if (Items[i].SellIn < 0)
+                {
+                    if (Items[i].Name != "Aged Brie")
+                    {
+                        if (Items[i].Name != "Backstage passes to a TAFKAL80ETC concert")
+                        {
+                            if (Items[i].Quality > 0)
+                            {
+                                if (Items[i].Name != "Sulfuras, Hand of Ragnaros")
+                                {
+                                    Items[i].Quality = Items[i].Quality - 1;
+                                }
+                            }
+                        }
+                        else
+                        {
+                            Items[i].Quality = Items[i].Quality - Items[i].Quality;
+                        }
+                    }
+                    else
+                    {
+                        if (Items[i].Quality < 50)
+                        {
+                            Items[i].Quality = Items[i].Quality + 1;
+                        }
+                    }
                 }
             }
         }
 
-        private static void UpdateAgedBrie(Item brie)
-        {
-            if (brie.Quality >= 50)
-            {
-                brie.SellIn--;
-                return;
-            }
-            brie.Quality = brie.SellIn switch
-            {
-                < 0 => brie.Quality + 2,                            
-                _ => brie.Quality + 1
-            };
-            brie.SellIn--;
-        }
-        
-        private static void UpdateBackstagePass(Item backstagePass)
-        {
-            if (backstagePass.Quality >= 50)
-            {
-                backstagePass.SellIn--;
-                return;
-            }
-            backstagePass.Quality = backstagePass.SellIn switch
-            {
-                < 0 => 0,
-                < 5 => backstagePass.Quality + 3,
-                < 10 => backstagePass.Quality + 2,
-                _ => backstagePass.Quality + 1
-            };
-            backstagePass.SellIn--;
-        }
-
-        private static void UpdateNormalItem(Item normalItem)
-        {
-            if (normalItem.Quality > 0)
-            {
-                normalItem.Quality--;
-            }
-        }
     }
 
     public class Item
