@@ -8,34 +8,27 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\minds\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "/Users/blakemccracken/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\minds\\Desktop\\gilded-rose-challenge\\GildedRoseChallenge\\GildedRoseChallenge.csproj",
+      "projectUniqueName": "/Users/blakemccracken/Gilded-Rose/gilded-rose-challenge/GildedRoseChallenge/GildedRoseChallenge.csproj",
       "projectName": "GildedRoseChallenge",
-      "projectPath": "C:\\Users\\minds\\Desktop\\gilded-rose-challenge\\GildedRoseChallenge\\GildedRoseChallenge.csproj",
-      "packagesPath": "C:\\Users\\minds\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\minds\\Desktop\\gilded-rose-challenge\\GildedRoseChallenge\\obj\\",
+      "projectPath": "/Users/blakemccracken/Gilded-Rose/gilded-rose-challenge/GildedRoseChallenge/GildedRoseChallenge.csproj",
+      "packagesPath": "/Users/blakemccracken/.nuget/packages/",
+      "outputPath": "/Users/blakemccracken/Gilded-Rose/gilded-rose-challenge/GildedRoseChallenge/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\minds\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/blakemccracken/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://nexus.integrate.ninja/repository/nuget-group/": {},
+        "https://www.myget.org/F/integrate/auth/3d79ab74-82d8-4985-a871-5b140acc04dc/api/v3/index.json": {}
       },
       "frameworks": {
         "net5.0": {
@@ -67,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/5.0.408/RuntimeIdentifierGraph.json"
       }
     }
   }

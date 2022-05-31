@@ -7,4 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = GildedRoseChallenge
-build_property.ProjectDir = c:\Users\minds\Desktop\gilded-rose-challenge\GildedRoseChallenge\
+build_property.ProjectDir = /Users/blakemccracken/Gilded-Rose/gilded-rose-challenge/GildedRoseChallenge/
