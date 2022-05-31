@@ -16,7 +16,7 @@ namespace GildedRoseChallenge_Test.Engine
             {
                 Name = "Aged Brie",
                 Quality = testQuality,
-                SellIn = 0
+                SellIn = -1
             };
 
             var items = new List<Item> { testItem };
@@ -38,7 +38,7 @@ namespace GildedRoseChallenge_Test.Engine
             {
                 Name = "Aged Brie",
                 Quality = testQuality,
-                SellIn = 1
+                SellIn = 0
             };
 
             var items = new List<Item> { testItem };
@@ -82,7 +82,7 @@ namespace GildedRoseChallenge_Test.Engine
             {
                 Name = "Not Aged Brie",
                 Quality = testQuality,
-                SellIn = 0
+                SellIn = -1
             };
 
             var items = new List<Item> { testItem };
@@ -233,7 +233,7 @@ namespace GildedRoseChallenge_Test.Engine
             {
                 Name = "Backstage passes to a TAFKAL80ETC concert",
                 Quality = testQuality,
-                SellIn = 0
+                SellIn = -1
             };
 
             var items = new List<Item> { testItem };

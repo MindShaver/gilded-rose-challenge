@@ -13,9 +13,24 @@ namespace GildedRoseChallenge.Engine
 
         public void UpdateQuality()
         {
-
             for (var i = 0; i < _items.Count; i++)
             {
+               /* switch (_items[i].Name)
+                {
+                    case "Aged Brie":
+                        UpdateQualityBrie(_items[i]);
+                        break;
+                    case "Backstage passes to a TAFKAL80ETC concert":
+                        // code block
+                        break;
+                    case "Sulfuras, Hand of Ragnaros":
+                        break;
+                    default:
+                        // code block
+                        break;
+                }*/
+
+
                 if (_items[i].Name != "Aged Brie" && _items[i].Name != "Backstage passes to a TAFKAL80ETC concert")
                 {
                     if (_items[i].Quality > 0)
@@ -53,11 +68,6 @@ namespace GildedRoseChallenge.Engine
                     }
                 }
 
-                if (_items[i].Name != "Sulfuras, Hand of Ragnaros")
-                {
-                    _items[i].SellIn = _items[i].SellIn - 1;
-                }
-
                 if (_items[i].SellIn < 0)
                 {
                     if (_items[i].Name != "Aged Brie")
@@ -85,11 +95,44 @@ namespace GildedRoseChallenge.Engine
                         }
                     }
                 }
+                if (_items[i].Name != "Sulfuras, Hand of Ragnaros")
+                {
+                    _items[i].SellIn = _items[i].SellIn - 1;
+                }
+            }
+        }
+        public void UpdateQualityBrie(Item item)
+        {
+            if (item.Quality < 50)
+            {
+                return;
+            }
+
+            if (item.SellIn < 0)
+            {
+                item.Quality += 2;
+            }
+            else
+            { 
+                item.Quality += 1;
             }
         }
 
-    }
+        public void UpdateQualityBackstagePass(Item item)
+        {
 
+        }
+        public void UpdateQualitySulfuras(Item item)
+        {
+        
+        }
+        public void UpdateQualityNormalItem(Item item)
+        {
+        
+        }
+    }
+    
+    
     public class Item
     {
         public string Name { get; set; }
