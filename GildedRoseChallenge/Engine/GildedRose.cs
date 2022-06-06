@@ -62,7 +62,7 @@ namespace GildedRoseChallenge.Engine
             backstagePass.SellIn--;
         }
 
-        private void UpdateNormalItem(Item normalItem)
+        private static void UpdateNormalItem(Item normalItem)
         {
             if (normalItem.Quality > 0)
             {
