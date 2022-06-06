@@ -19,68 +19,22 @@ namespace GildedRoseChallenge.Engine
                 {
                     UpdateAgedBrie(t);
                 }
-                else if (t.Name != "Backstage passes to a TAFKAL80ETC concert")
+                else if (t.Name == "Backstage passes to a TAFKAL80ETC concert")
                 {
-                    if (t.Quality <= 0) continue;
-                    if (t.Name != "Sulfuras, Hand of Ragnaros")
-                    {
-                        t.Quality = t.Quality - 1;
-                    }
-                }
-                else if (t.Quality < 50)
-                {
-                    t.Quality = t.Quality + 6;
-
-                    if (t.Name != "Backstage passes to a TAFKAL80ETC concert") continue;
-                    if (t.SellIn < 11)
-                    {
-                        if (t.Quality < 50)
-                        {
-                            t.Quality = t.Quality + 1;
-                        }
-                    }
-
-                    if (t.SellIn < 6)
-                    {
-                        if (t.Quality < 50)
-                        {
-                            t.Quality = t.Quality + 1;
-                        }
-                    }
+                    UpdateBackstagePass(t);
                 }
                 else if (t.Name != "Sulfuras, Hand of Ragnaros")
                 {
-                    t.SellIn = t.SellIn - 1;
-                }
-                else if (t.Name != "Aged Brie")
-                {
-                    if (t.Name != "Backstage passes to a TAFKAL80ETC concert")
-                    {
-                        if (t.Quality <= 0) continue;
-                        if (t.Name != "Sulfuras, Hand of Ragnaros")
-                        {
-                            t.Quality = t.Quality - 1;
-                        }
-                    }
-                    else
-                    {
-                        t.Quality = 0;
-                    }
-                }
-                else
-                {
-                    if (t.Quality < 50)
-                    {
-                        t.Quality = t.Quality + 1;
-                    }
+                    UpdateNormalItem(t);
                 }
             }
         }
 
-        private void UpdateAgedBrie(Item brie)
+        private static void UpdateAgedBrie(Item brie)
         {
             if (brie.Quality >= 50)
             {
+                brie.SellIn--;
                 return;
             }
             brie.Quality = brie.SellIn switch
@@ -88,9 +42,33 @@ namespace GildedRoseChallenge.Engine
                 < 0 => brie.Quality + 2,                            
                 _ => brie.Quality + 1
             };
+            brie.SellIn--;
         }
         
+        private static void UpdateBackstagePass(Item backstagePass)
+        {
+            if (backstagePass.Quality >= 50)
+            {
+                backstagePass.SellIn--;
+                return;
+            }
+            backstagePass.Quality = backstagePass.SellIn switch
+            {
+                < 0 => 0,
+                < 5 => backstagePass.Quality + 3,
+                < 10 => backstagePass.Quality + 2,
+                _ => backstagePass.Quality + 1
+            };
+            backstagePass.SellIn--;
+        }
 
+        private void UpdateNormalItem(Item normalItem)
+        {
+            if (normalItem.Quality > 0)
+            {
+                normalItem.Quality--;
+            }
+        }
     }
 
     public class Item
