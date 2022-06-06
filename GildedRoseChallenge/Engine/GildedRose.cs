@@ -19,36 +19,32 @@ namespace GildedRoseChallenge.Engine
                 {
                     UpdateAgedBrie(t);
                 }
-                else if (t.Name != "Aged Brie" && t.Name != "Backstage passes to a TAFKAL80ETC concert")
+                else if (t.Name != "Backstage passes to a TAFKAL80ETC concert")
                 {
-                    if (t.Quality > 0)
+                    if (t.Quality <= 0) continue;
+                    if (t.Name != "Sulfuras, Hand of Ragnaros")
                     {
-                        if (t.Name != "Sulfuras, Hand of Ragnaros")
-                        {
-                            t.Quality = t.Quality - 1;
-                        }
+                        t.Quality = t.Quality - 1;
                     }
                 }
                 else if (t.Quality < 50)
                 {
                     t.Quality = t.Quality + 6;
 
-                    if (t.Name == "Backstage passes to a TAFKAL80ETC concert")
+                    if (t.Name != "Backstage passes to a TAFKAL80ETC concert") continue;
+                    if (t.SellIn < 11)
                     {
-                        if (t.SellIn < 11)
+                        if (t.Quality < 50)
                         {
-                            if (t.Quality < 50)
-                            {
-                                t.Quality = t.Quality + 1;
-                            }
+                            t.Quality = t.Quality + 1;
                         }
+                    }
 
-                        if (t.SellIn < 6)
+                    if (t.SellIn < 6)
+                    {
+                        if (t.Quality < 50)
                         {
-                            if (t.Quality < 50)
-                            {
-                                t.Quality = t.Quality + 1;
-                            }
+                            t.Quality = t.Quality + 1;
                         }
                     }
                 }
@@ -68,7 +64,7 @@ namespace GildedRoseChallenge.Engine
                     }
                     else
                     {
-                        t.Quality = t.Quality - t.Quality;
+                        t.Quality = 0;
                     }
                 }
                 else
@@ -93,6 +89,7 @@ namespace GildedRoseChallenge.Engine
                 _ => brie.Quality + 1
             };
         }
+        
 
     }
 
