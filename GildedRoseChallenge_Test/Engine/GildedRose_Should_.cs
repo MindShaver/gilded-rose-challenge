@@ -1,6 +1,7 @@
 ﻿using GildedRoseChallenge;
 using System.Collections.Generic;
 using System.Linq;
+using GildedRoseChallenge.Engine;
 using Xunit;
 
 namespace GildedRoseChallenge_Test.Engine

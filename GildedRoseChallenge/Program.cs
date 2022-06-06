@@ -4,9 +4,9 @@ using System.Diagnostics.CodeAnalysis;
 namespace GildedRoseChallenge
 {
     [ExcludeFromCodeCoverage]
-    public class Program
+    public static class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             Console.WriteLine("You Shouldn't Be Seeing This");
             Console.WriteLine("Check out the read me on how to work with this project.");
