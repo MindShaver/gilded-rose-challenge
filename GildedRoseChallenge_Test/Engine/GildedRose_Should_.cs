@@ -34,6 +34,7 @@ namespace GildedRoseChallenge_Test.Engine
         {
             int testQuality = 10;
             var expectedQuality = testQuality + 2;
+            var expectedQuality2 = testQuality + 13;
             Item testItem = new Item
             {
                 Name = "Backstage passes to a TAFKAL80ETC concert",
@@ -49,6 +50,15 @@ namespace GildedRoseChallenge_Test.Engine
             var actualQuality = items.First().Quality;
 
             Assert.Equal(expectedQuality, actualQuality);
+
+            while (items.First().SellIn > 4)
+            {
+                engine.UpdateQuality();
+            }
+
+            var actualQuality2 = items.First().Quality;
+            
+            Assert.Equal(expectedQuality2, actualQuality2);
         }
         [Fact]
         public void Not_Update_The_Quality_Of_Sulfuras_To_Increase_With_Time()
