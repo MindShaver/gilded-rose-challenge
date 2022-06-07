@@ -15,17 +15,23 @@ namespace GildedRoseChallenge.Engine
         {
             foreach (var t in _items)
             {
-                if (t.Name == "Aged Brie")
+                switch (t.Name)
                 {
-                    UpdateAgedBrie(t);
-                }
-                else if (t.Name == "Backstage passes to a TAFKAL80ETC concert")
-                {
-                    UpdateBackstagePass(t);
-                }
-                else if (t.Name != "Sulfuras, Hand of Ragnaros")
-                {
-                    UpdateNormalItem(t);
+                    case "Aged Brie":
+                        UpdateAgedBrie(t);
+                        break;
+                    case "Backstage passes to a TAFKAL80ETC concert":
+                        UpdateBackstagePass(t);
+                        break;
+                    default:
+                    {
+                        if (t.Name != "Sulfuras, Hand of Ragnaros")
+                        {
+                            UpdateNormalItem(t);
+                        }
+
+                        break;
+                    }
                 }
             }
         }
@@ -55,8 +61,8 @@ namespace GildedRoseChallenge.Engine
             backstagePass.Quality = backstagePass.SellIn switch
             {
                 < 0 => 0,
-                < 5 => backstagePass.Quality + 3,
-                < 10 => backstagePass.Quality + 2,
+                <= 5 => backstagePass.Quality + 3,
+                <= 10 => backstagePass.Quality + 2,
                 _ => backstagePass.Quality + 1
             };
             backstagePass.SellIn--;
