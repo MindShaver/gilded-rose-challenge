@@ -29,17 +29,18 @@ namespace GildedRoseChallenge_Test.Engine
 
             Assert.Equal(expectedQuality, actualQuality);
         }
-        [Fact]
-        public void Update_The_Quality_Of_Backstage_Pass_To_Change_With_Time()
+        [Theory]
+        [InlineData(10, 11, 11)]
+        [InlineData(10, 10, 12)]
+        [InlineData(10, 5, 13)]
+        [InlineData(10, -1, 0)]
+        public void Update_The_Quality_Of_Backstage_Pass_To_Change_With_Time(int testQuality, int sellIn, int expectedQuality)
         {
-            int testQuality = 10;
-            var expectedQuality = testQuality + 2;
-            var expectedQuality2 = testQuality + 13;
             Item testItem = new Item
             {
                 Name = "Backstage passes to a TAFKAL80ETC concert",
                 Quality = testQuality,
-                SellIn = 10
+                SellIn = sellIn
             };
 
             var items = new List<Item> { testItem };
@@ -50,15 +51,6 @@ namespace GildedRoseChallenge_Test.Engine
             var actualQuality = items.First().Quality;
 
             Assert.Equal(expectedQuality, actualQuality);
-
-            while (items.First().SellIn > 4)
-            {
-                engine.UpdateQuality();
-            }
-
-            var actualQuality2 = items.First().Quality;
-            
-            Assert.Equal(expectedQuality2, actualQuality2);
         }
         [Fact]
         public void Not_Update_The_Quality_Of_Sulfuras_To_Increase_With_Time()

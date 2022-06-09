@@ -70,7 +70,7 @@ namespace GildedRoseChallenge.Engine
 
         private static void UpdateNormalItem(Item normalItem)
         {
-            if (normalItem.Quality > 0)
+            if (normalItem.Quality > 0 && normalItem.SellIn >= 0)
             {
                 normalItem.Quality--;
             }
