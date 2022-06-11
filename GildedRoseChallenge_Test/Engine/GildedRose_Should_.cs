@@ -29,6 +29,7 @@ namespace GildedRoseChallenge_Test.Engine
 
             Assert.Equal(expectedQuality, actualQuality);
         }
+
         [Theory]
         [InlineData(10, 11, 11)]
         [InlineData(10, 10, 12)]
@@ -52,6 +53,29 @@ namespace GildedRoseChallenge_Test.Engine
 
             Assert.Equal(expectedQuality, actualQuality);
         }
+
+        [Fact]
+        public void Update_The_Quality_Of_Normal_Item_To_Decrease_With_Time()
+        {
+            var testQuality = 10;
+            var expectedQuality = 9;
+            Item testItem = new Item
+            {
+                Name = "Normal Item",
+                Quality = testQuality,
+                SellIn = 1
+            };
+
+            var items = new List<Item> { testItem };
+
+            var engine = new GildedRose(items);
+            engine.UpdateQuality();
+
+            var actualQuality = items.First().Quality;
+
+            Assert.Equal(expectedQuality, actualQuality);
+        }
+
         [Fact]
         public void Not_Update_The_Quality_Of_Sulfuras_To_Increase_With_Time()
         {
