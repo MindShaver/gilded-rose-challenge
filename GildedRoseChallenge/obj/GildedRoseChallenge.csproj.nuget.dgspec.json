@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\NashStokes\\RiderProjects\\gilded-rose-challenge\\GildedRoseChallenge\\GildedRoseChallenge.csproj": {}
+    "C:\\Users\\nashs\\Source\\Repos\\MindShaver\\gilded-rose-challenge\\GildedRoseChallenge\\GildedRoseChallenge.csproj": {}
   },
   "projects": {
-    "C:\\Users\\NashStokes\\RiderProjects\\gilded-rose-challenge\\GildedRoseChallenge\\GildedRoseChallenge.csproj": {
+    "C:\\Users\\nashs\\Source\\Repos\\MindShaver\\gilded-rose-challenge\\GildedRoseChallenge\\GildedRoseChallenge.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\NashStokes\\RiderProjects\\gilded-rose-challenge\\GildedRoseChallenge\\GildedRoseChallenge.csproj",
+        "projectUniqueName": "C:\\Users\\nashs\\Source\\Repos\\MindShaver\\gilded-rose-challenge\\GildedRoseChallenge\\GildedRoseChallenge.csproj",
         "projectName": "GildedRoseChallenge",
-        "projectPath": "C:\\Users\\NashStokes\\RiderProjects\\gilded-rose-challenge\\GildedRoseChallenge\\GildedRoseChallenge.csproj",
-        "packagesPath": "C:\\Users\\NashStokes\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\NashStokes\\RiderProjects\\gilded-rose-challenge\\GildedRoseChallenge\\obj\\",
+        "projectPath": "C:\\Users\\nashs\\Source\\Repos\\MindShaver\\gilded-rose-challenge\\GildedRoseChallenge\\GildedRoseChallenge.csproj",
+        "packagesPath": "C:\\Users\\nashs\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\nashs\\Source\\Repos\\MindShaver\\gilded-rose-challenge\\GildedRoseChallenge\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\NashStokes\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\nashs\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,7 +25,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://nexus.integrate.ninja/": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {

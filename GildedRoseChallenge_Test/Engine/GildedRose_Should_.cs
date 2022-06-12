@@ -35,6 +35,7 @@ namespace GildedRoseChallenge_Test.Engine
         [InlineData(10, 10, 12)]
         [InlineData(10, 5, 13)]
         [InlineData(10, -1, 0)]
+        [InlineData(0, 11, 1)]
         public void Update_The_Quality_Of_Backstage_Pass_To_Change_With_Time(int testQuality, int sellIn, int expectedQuality)
         {
             Item testItem = new Item
@@ -54,16 +55,17 @@ namespace GildedRoseChallenge_Test.Engine
             Assert.Equal(expectedQuality, actualQuality);
         }
 
-        [Fact]
-        public void Update_The_Quality_Of_Normal_Item_To_Decrease_With_Time()
+        [Theory]
+        [InlineData(10, 10, 9)]
+        [InlineData(0, 10, 0)]
+        [InlineData(10, -1, 8)]
+        public void Update_The_Quality_Of_Normal_Item_To_Decrease_With_Time(int testQuality, int sellIn, int expectedQuality)
         {
-            var testQuality = 10;
-            var expectedQuality = 9;
             Item testItem = new Item
             {
                 Name = "Normal Item",
                 Quality = testQuality,
-                SellIn = 1
+                SellIn = sellIn
             };
 
             var items = new List<Item> { testItem };

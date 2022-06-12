@@ -5565,19 +5565,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\NashStokes\\.nuget\\packages\\": {}
+    "C:\\Users\\nashs\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\NashStokes\\RiderProjects\\gilded-rose-challenge\\GildedRoseChallenge_Test\\GildedRoseChallenge_Test.csproj",
+      "projectUniqueName": "C:\\Users\\nashs\\Source\\Repos\\MindShaver\\gilded-rose-challenge\\GildedRoseChallenge_Test\\GildedRoseChallenge_Test.csproj",
       "projectName": "GildedRoseChallenge_Test",
-      "projectPath": "C:\\Users\\NashStokes\\RiderProjects\\gilded-rose-challenge\\GildedRoseChallenge_Test\\GildedRoseChallenge_Test.csproj",
-      "packagesPath": "C:\\Users\\NashStokes\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\NashStokes\\RiderProjects\\gilded-rose-challenge\\GildedRoseChallenge_Test\\obj\\",
+      "projectPath": "C:\\Users\\nashs\\Source\\Repos\\MindShaver\\gilded-rose-challenge\\GildedRoseChallenge_Test\\GildedRoseChallenge_Test.csproj",
+      "packagesPath": "C:\\Users\\nashs\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\nashs\\Source\\Repos\\MindShaver\\gilded-rose-challenge\\GildedRoseChallenge_Test\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\NashStokes\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\nashs\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5585,14 +5589,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://nexus.integrate.ninja/": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\NashStokes\\RiderProjects\\gilded-rose-challenge\\GildedRoseChallenge\\GildedRoseChallenge.csproj": {
-              "projectPath": "C:\\Users\\NashStokes\\RiderProjects\\gilded-rose-challenge\\GildedRoseChallenge\\GildedRoseChallenge.csproj"
+            "C:\\Users\\nashs\\Source\\Repos\\MindShaver\\gilded-rose-challenge\\GildedRoseChallenge\\GildedRoseChallenge.csproj": {
+              "projectPath": "C:\\Users\\nashs\\Source\\Repos\\MindShaver\\gilded-rose-challenge\\GildedRoseChallenge\\GildedRoseChallenge.csproj"
             }
           }
         }
