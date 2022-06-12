@@ -35,6 +35,9 @@ namespace GildedRoseChallenge_Test.Engine
         [InlineData(10, 10, 12)]
         [InlineData(10, 5, 13)]
         [InlineData(10, -1, 0)]
+        [InlineData(0, 10, 2)]
+        [InlineData(0, 5, 3)]
+        [InlineData(0, -1, 0)]
         [InlineData(0, 11, 1)]
         public void Update_The_Quality_Of_Backstage_Pass_To_Change_With_Time(int testQuality, int sellIn, int expectedQuality)
         {
