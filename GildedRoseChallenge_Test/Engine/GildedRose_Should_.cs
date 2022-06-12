@@ -58,7 +58,6 @@ namespace GildedRoseChallenge_Test.Engine
         [Theory]
         [InlineData(10, 10, 9)]
         [InlineData(0, 10, 0)]
-        [InlineData(10, -1, 8)]
         public void Update_The_Quality_Of_Normal_Item_To_Decrease_With_Time(int testQuality, int sellIn, int expectedQuality)
         {
             Item testItem = new Item
