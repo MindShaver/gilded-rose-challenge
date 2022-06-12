@@ -61,8 +61,8 @@ namespace GildedRoseChallenge.Engine
             backstagePass.Quality = backstagePass.SellIn switch
             {
                 < 0 => 0,
-                <= 5 => backstagePass.Quality + 3,
-                <= 10 => backstagePass.Quality + 2,
+                < 6 => backstagePass.Quality + 3,
+                < 11 => backstagePass.Quality + 2,
                 _ => backstagePass.Quality + 1
             };
             backstagePass.SellIn--;
