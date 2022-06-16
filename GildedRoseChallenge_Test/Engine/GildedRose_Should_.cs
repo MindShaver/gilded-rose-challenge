@@ -1,13 +1,22 @@
-﻿using GildedRoseChallenge;
+﻿using System;
+using GildedRoseChallenge;
 using System.Collections.Generic;
 using System.Linq;
 using GildedRoseChallenge.Engine;
 using Xunit;
+using Xunit.Abstractions;
 
 namespace GildedRoseChallenge_Test.Engine
 {
     public class GildedRose_Should_
     {
+        private readonly ITestOutputHelper _testOutputHelper;
+
+        public GildedRose_Should_(ITestOutputHelper testOutputHelper)
+        {
+            _testOutputHelper = testOutputHelper;
+        }
+
         [Fact]
         public void Update_The_Quality_Of_Aged_Brie_To_Increase_With_Time()
         {
@@ -48,7 +57,7 @@ namespace GildedRoseChallenge_Test.Engine
                 Quality = testQuality,
                 SellIn = sellIn
             };
-
+            _testOutputHelper.WriteLine(testItem.Name[0].ToString());
             var items = new List<Item> { testItem };
 
             var engine = new GildedRose(items);
@@ -62,7 +71,31 @@ namespace GildedRoseChallenge_Test.Engine
         [Theory]
         [InlineData(10, 10, 9)]
         [InlineData(0, 10, 0)]
-        public void Update_The_Quality_Of_Normal_Item_To_Decrease_With_Time(int testQuality, int sellIn, int expectedQuality)
+        public void Update_The_Quality_Of_Normal_Item_To_Decrease_With_Time(int testQuality, int sellIn,
+            int expectedQuality)
+        {
+            Item testItem = new Item
+            {
+                Name = "Normal Item",
+                Quality = testQuality,
+                SellIn = sellIn
+            };
+
+            var items = new List<Item> { testItem };
+
+            var engine = new GildedRose(items);
+            engine.UpdateQuality();
+
+            var actualQuality = items.First().Quality;
+
+            Assert.Equal(expectedQuality, actualQuality);
+        }
+        
+        [Theory]
+        [InlineData(10, 10, 9)]
+        [InlineData(0, 10, 0)]
+        public void Update_The_Quality_Of_Conjured_Item_To_Decrease_With_Time(int testQuality, int sellIn,
+            int expectedQuality)
         {
             Item testItem = new Item
             {
