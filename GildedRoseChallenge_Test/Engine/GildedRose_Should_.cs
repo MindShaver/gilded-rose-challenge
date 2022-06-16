@@ -17,16 +17,17 @@ namespace GildedRoseChallenge_Test.Engine
             _testOutputHelper = testOutputHelper;
         }
 
-        [Fact]
-        public void Update_The_Quality_Of_Aged_Brie_To_Increase_With_Time()
+        [Theory]
+        [InlineData(50, 11, 50)]
+        [InlineData(10, -1, 12)]
+        [InlineData(10, 1, 11)]
+        public void Update_The_Quality_Of_Aged_Brie_To_Increase_With_Time(int testQuality, int sellIn, int expectedQuality)
         {
-            const int testQuality = 10;
-            var expectedQuality = testQuality + 1;
             Item testItem = new Item
             {
                 Name = "Aged Brie",
                 Quality = testQuality,
-                SellIn = 0
+                SellIn = sellIn
             };
 
             var items = new List<Item> { testItem };
