@@ -43,11 +43,17 @@ namespace GildedRoseChallenge.Engine
                 brie.SellIn--;
                 return;
             }
-            brie.Quality = brie.SellIn switch
+
+            switch (brie.SellIn)
             {
-                < 0 => brie.Quality + 2,                            
-                _ => brie.Quality + 1
-            };
+                case < 0:
+                    brie.Quality = brie.Quality + 2;
+                    break;
+                default:
+                    brie.Quality = brie.Quality + 1;
+                    break;
+            }
+
             brie.SellIn--;
         }
         
@@ -59,14 +65,21 @@ namespace GildedRoseChallenge.Engine
                 return;
             }
 
-            if (backstagePass.SellIn < 0)
-                backstagePass.Quality = 0;
-            else if (backstagePass.SellIn < 6)
-                backstagePass.Quality = backstagePass.Quality + 3;
-            else if (backstagePass.SellIn < 11)
-                backstagePass.Quality = backstagePass.Quality + 2;
-            else
-                backstagePass.Quality = backstagePass.Quality + 1;
+            switch (backstagePass.SellIn)
+            {
+                case < 0:
+                    backstagePass.Quality = 0;
+                    break;
+                case < 6:
+                    backstagePass.Quality = backstagePass.Quality + 3;
+                    break;
+                case < 11:
+                    backstagePass.Quality = backstagePass.Quality + 2;
+                    break;
+                default:
+                    backstagePass.Quality = backstagePass.Quality + 1;
+                    break;
+            }
 
             backstagePass.SellIn--;
         }
