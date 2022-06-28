@@ -15,95 +15,28 @@ namespace GildedRoseChallenge.Engine
         {
             for (var i = 0; i < _items.Count; i++)
             {
-               /* switch (_items[i].Name)
+               switch (_items[i].Name)
                 {
                     case "Aged Brie":
                         UpdateQualityBrie(_items[i]);
+                        _items[i].SellIn -= 1;
                         break;
                     case "Backstage passes to a TAFKAL80ETC concert":
-                        // code block
+                        UpdateQualityBackstagePass(_items[i]);
+                        _items[i].SellIn -= 1;
                         break;
                     case "Sulfuras, Hand of Ragnaros":
                         break;
                     default:
-                        // code block
+                        UpdateQualityNormalItem(_items[i]);
+                        _items[i].SellIn -= 1;
                         break;
-                }*/
-
-
-                if (_items[i].Name != "Aged Brie" && _items[i].Name != "Backstage passes to a TAFKAL80ETC concert")
-                {
-                    if (_items[i].Quality > 0)
-                    {
-                        if (_items[i].Name != "Sulfuras, Hand of Ragnaros")
-                        {
-                            _items[i].Quality = _items[i].Quality - 1;
-                        }
-                    }
-                }
-                else
-                {
-                    if (_items[i].Quality < 50)
-                    {
-                        _items[i].Quality = _items[i].Quality + 1;
-
-                        if (_items[i].Name == "Backstage passes to a TAFKAL80ETC concert")
-                        {
-                            if (_items[i].SellIn < 11)
-                            {
-                                if (_items[i].Quality < 50)
-                                {
-                                    _items[i].Quality = _items[i].Quality + 1;
-                                }
-                            }
-
-                            if (_items[i].SellIn < 6)
-                            {
-                                if (_items[i].Quality < 50)
-                                {
-                                    _items[i].Quality = _items[i].Quality + 1;
-                                }
-                            }
-                        }
-                    }
-                }
-
-                if (_items[i].SellIn < 0)
-                {
-                    if (_items[i].Name != "Aged Brie")
-                    {
-                        if (_items[i].Name != "Backstage passes to a TAFKAL80ETC concert")
-                        {
-                            if (_items[i].Quality > 0)
-                            {
-                                if (_items[i].Name != "Sulfuras, Hand of Ragnaros")
-                                {
-                                    _items[i].Quality = _items[i].Quality - 1;
-                                }
-                            }
-                        }
-                        else
-                        {
-                            _items[i].Quality = _items[i].Quality - _items[i].Quality;
-                        }
-                    }
-                    else
-                    {
-                        if (_items[i].Quality < 50)
-                        {
-                            _items[i].Quality = _items[i].Quality + 1;
-                        }
-                    }
-                }
-                if (_items[i].Name != "Sulfuras, Hand of Ragnaros")
-                {
-                    _items[i].SellIn = _items[i].SellIn - 1;
                 }
             }
         }
         public void UpdateQualityBrie(Item item)
         {
-            if (item.Quality < 50)
+            if (item.Quality >= 50)
             {
                 return;
             }
@@ -120,18 +53,55 @@ namespace GildedRoseChallenge.Engine
 
         public void UpdateQualityBackstagePass(Item item)
         {
+            
+            //maybe switch to a switch?
+            if (item.Quality >= 50)
+            {
+                return;
+            }
 
-        }
-        public void UpdateQualitySulfuras(Item item)
-        {
-        
+            if (item.SellIn < 0)
+            {
+                item.Quality = 0;
+                return;
+            }
+            
+            item.Quality += 1;
+            
+            if (item.SellIn < 6 && item.SellIn >= 0)
+            {
+                item.Quality +=2;
+            }
+            else if (item.SellIn < 11 && item.SellIn > 5)
+            {
+                item.Quality += 1;
+            }
         }
         public void UpdateQualityNormalItem(Item item)
         {
-        
+            if (item.Quality == 0)
+            {
+                return;
+            }
+
+            if (item.Name.StartsWith("[Conjured]"))
+            {
+                item.Quality -= 2;
+                if (item.SellIn < 0 && item.Quality > 0)
+                {
+                    item.Quality -= 2;
+                }
+                return;
+            }
+
+            item.Quality -= 1;
+
+            if(item.SellIn < 0 && item.Quality > 0)
+            {
+                item.Quality -= 1;
+            }
         }
     }
-    
     
     public class Item
     {

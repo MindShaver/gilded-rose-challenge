@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using FluentAssertions;
 using GildedRoseChallenge.Engine;
 using Xunit;
 
@@ -54,13 +55,59 @@ namespace GildedRoseChallenge_Test.Engine
         [Fact]
         public void Decrease_Quality_Of_Standard_Non_Expired_Item_With_Time()
         {
+            var testItem = new Item
+            {
+                Name = "Not Aged Brie",
+                Quality = 10,
+                SellIn = 1
+            };
+            var expectedItem = new Item
+            {
+                Name = testItem.Name,
+                Quality = testItem.Quality - 1,
+                SellIn = testItem.SellIn - 1
+            };
+
+            var items = new List<Item> { testItem };
+
+            var engine = new GildedRose(items);
+            engine.UpdateQuality();
+
+            items.First().Should().BeEquivalentTo(expectedItem);
+        }
+        
+        [Fact]
+        public void Decrease_Quality_Of_Standard_Expired_Item_With_Time()
+        {
             var testQuality = 10;
-            var expectedQuality = testQuality - 1;
+            var expectedQuality = testQuality - 2;
             var testItem = new Item
             {
                 Name = "Not Aged Brie",
                 Quality = testQuality,
-                SellIn = 1
+                SellIn = -1
+            };
+
+            var items = new List<Item> { testItem };
+
+            var engine = new GildedRose(items);
+            engine.UpdateQuality();
+
+            var actualQuality = items.First().Quality;
+
+            Assert.Equal(expectedQuality, actualQuality);
+        }
+                
+        [Fact]
+        public void Decrease_Quality_Of_Conjured_Item_With_Time()
+        {
+            var testQuality = 10;
+            var expectedQuality = testQuality - 2;
+            var testItem = new Item
+            {
+                Name = "[Conjured] Potion of Lesser Healing",
+                Quality = testQuality,
+                SellIn = 3
             };
 
             var items = new List<Item> { testItem };
@@ -74,13 +121,13 @@ namespace GildedRoseChallenge_Test.Engine
         }
         
         [Fact]
-        public void Decrease_Quality_Of_Standard_Expired_Item_With_Time()
+        public void Decrease_Quality_Of_Conjured_Expired_Item_With_Time()
         {
             var testQuality = 10;
-            var expectedQuality = testQuality - 2;
+            var expectedQuality = testQuality - 4;
             var testItem = new Item
             {
-                Name = "Not Aged Brie",
+                Name = "[Conjured] Potion of Lesser Healing",
                 Quality = testQuality,
                 SellIn = -1
             };
