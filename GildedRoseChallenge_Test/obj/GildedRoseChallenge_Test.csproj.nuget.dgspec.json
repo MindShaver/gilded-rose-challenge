@@ -1,28 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "/Users/blakemccracken/Gilded-Rose/gilded-rose-challenge/GildedRoseChallenge_Test/GildedRoseChallenge_Test.csproj": {}
+    "/Users/kloweemalakowsky/Dev/gilded-rose-challenge/GildedRoseChallenge_Test/GildedRoseChallenge_Test.csproj": {}
   },
   "projects": {
-    "/Users/blakemccracken/Gilded-Rose/gilded-rose-challenge/GildedRoseChallenge/GildedRoseChallenge.csproj": {
+    "/Users/kloweemalakowsky/Dev/gilded-rose-challenge/GildedRoseChallenge/GildedRoseChallenge.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/blakemccracken/Gilded-Rose/gilded-rose-challenge/GildedRoseChallenge/GildedRoseChallenge.csproj",
+        "projectUniqueName": "/Users/kloweemalakowsky/Dev/gilded-rose-challenge/GildedRoseChallenge/GildedRoseChallenge.csproj",
         "projectName": "GildedRoseChallenge",
-        "projectPath": "/Users/blakemccracken/Gilded-Rose/gilded-rose-challenge/GildedRoseChallenge/GildedRoseChallenge.csproj",
-        "packagesPath": "/Users/blakemccracken/.nuget/packages/",
-        "outputPath": "/Users/blakemccracken/Gilded-Rose/gilded-rose-challenge/GildedRoseChallenge/obj/",
+        "projectPath": "/Users/kloweemalakowsky/Dev/gilded-rose-challenge/GildedRoseChallenge/GildedRoseChallenge.csproj",
+        "packagesPath": "/Users/kloweemalakowsky/.nuget/packages/",
+        "outputPath": "/Users/kloweemalakowsky/Dev/gilded-rose-challenge/GildedRoseChallenge/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/blakemccracken/.nuget/NuGet/NuGet.Config"
+          "/Users/kloweemalakowsky/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nexus.integrate.ninja/repository/nuget-group/": {},
-          "https://www.myget.org/F/integrate/auth/3d79ab74-82d8-4985-a871-5b140acc04dc/api/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
@@ -54,36 +52,34 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/5.0.408/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.408/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/blakemccracken/Gilded-Rose/gilded-rose-challenge/GildedRoseChallenge_Test/GildedRoseChallenge_Test.csproj": {
+    "/Users/kloweemalakowsky/Dev/gilded-rose-challenge/GildedRoseChallenge_Test/GildedRoseChallenge_Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/blakemccracken/Gilded-Rose/gilded-rose-challenge/GildedRoseChallenge_Test/GildedRoseChallenge_Test.csproj",
+        "projectUniqueName": "/Users/kloweemalakowsky/Dev/gilded-rose-challenge/GildedRoseChallenge_Test/GildedRoseChallenge_Test.csproj",
         "projectName": "GildedRoseChallenge_Test",
-        "projectPath": "/Users/blakemccracken/Gilded-Rose/gilded-rose-challenge/GildedRoseChallenge_Test/GildedRoseChallenge_Test.csproj",
-        "packagesPath": "/Users/blakemccracken/.nuget/packages/",
-        "outputPath": "/Users/blakemccracken/Gilded-Rose/gilded-rose-challenge/GildedRoseChallenge_Test/obj/",
+        "projectPath": "/Users/kloweemalakowsky/Dev/gilded-rose-challenge/GildedRoseChallenge_Test/GildedRoseChallenge_Test.csproj",
+        "packagesPath": "/Users/kloweemalakowsky/.nuget/packages/",
+        "outputPath": "/Users/kloweemalakowsky/Dev/gilded-rose-challenge/GildedRoseChallenge_Test/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/blakemccracken/.nuget/NuGet/NuGet.Config"
+          "/Users/kloweemalakowsky/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nexus.integrate.ninja/repository/nuget-group/": {},
-          "https://www.myget.org/F/integrate/auth/3d79ab74-82d8-4985-a871-5b140acc04dc/api/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "/Users/blakemccracken/Gilded-Rose/gilded-rose-challenge/GildedRoseChallenge/GildedRoseChallenge.csproj": {
-                "projectPath": "/Users/blakemccracken/Gilded-Rose/gilded-rose-challenge/GildedRoseChallenge/GildedRoseChallenge.csproj"
+              "/Users/kloweemalakowsky/Dev/gilded-rose-challenge/GildedRoseChallenge/GildedRoseChallenge.csproj": {
+                "projectPath": "/Users/kloweemalakowsky/Dev/gilded-rose-challenge/GildedRoseChallenge/GildedRoseChallenge.csproj"
               }
             }
           }
@@ -134,7 +130,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/5.0.408/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.408/RuntimeIdentifierGraph.json"
         }
       }
     }
