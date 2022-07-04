@@ -94,15 +94,17 @@ namespace GildedRoseChallenge_Test.Engine
         
         [Theory]
         [InlineData("[Conjured] Normal item", 10, 10, 8)]
+        [InlineData("[Conjured] Normal item", -456, 1, 0)]
         [InlineData("[Conjured] Backstage passes to a TAFKAL80ETC concert", 10, 11, 12)]
         [InlineData("[Conjured] Backstage passes to a TAFKAL80ETC concert", 10, 10, 14)]
         [InlineData("[Conjured] Backstage passes to a TAFKAL80ETC concert", 10, 5, 16)]
         [InlineData("[Conjured] Backstage passes to a TAFKAL80ETC concert", 10, -1, 0)]
+        [InlineData("[Conjured] Backstage passes to a TAFKAL80ETC concert", -456, 1, 0)]
         [InlineData("[Conjured] Sulfuras, Hand of Ragnaros", 80, 10, 80)]
         [InlineData("[Conjured] Aged Brie", 50, 11, 50)]
         [InlineData("[Conjured] Aged Brie", 10, -1, 14)]
         [InlineData("[Conjured] Aged Brie", 10, 1, 12)]
-
+        [InlineData("[Conjured] Aged Brie", -456, 1, 0)]
         public void Update_The_Quality_Of_Conjured_Item_To_Change_With_Time(String itemName, int testQuality, int sellIn,
             int expectedQuality)
         {
