@@ -1,8 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\NashStokes\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\NashStokes\\.nuget\\packages"
+      "/Users/nashstokes/.dotnet/store/|arch|/|tfm|",
+      "/Users/nashstokes/.nuget/packages"
     ]
   }
 }

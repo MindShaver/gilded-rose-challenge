@@ -8,28 +8,26 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\NashStokes\\.nuget\\packages\\": {}
+    "/Users/nashstokes/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\NashStokes\\RiderProjects\\gilded-rose-challenge\\GildedRoseChallenge\\GildedRoseChallenge.csproj",
+      "projectUniqueName": "/Users/nashstokes/RiderProjects/gilded-rose-challenge/GildedRoseChallenge/GildedRoseChallenge.csproj",
       "projectName": "GildedRoseChallenge",
-      "projectPath": "C:\\Users\\NashStokes\\RiderProjects\\gilded-rose-challenge\\GildedRoseChallenge\\GildedRoseChallenge.csproj",
-      "packagesPath": "C:\\Users\\NashStokes\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\NashStokes\\RiderProjects\\gilded-rose-challenge\\GildedRoseChallenge\\obj\\",
+      "projectPath": "/Users/nashstokes/RiderProjects/gilded-rose-challenge/GildedRoseChallenge/GildedRoseChallenge.csproj",
+      "packagesPath": "/Users/nashstokes/.nuget/packages/",
+      "outputPath": "/Users/nashstokes/RiderProjects/gilded-rose-challenge/GildedRoseChallenge/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\NashStokes\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/nashstokes/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {},
-        "https://nexus.integrate.ninja/": {}
+        "https://nexus.integrate.ninja/repository/nuget-group/": {}
       },
       "frameworks": {
         "net5.0": {
@@ -61,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.300/RuntimeIdentifierGraph.json"
       }
     }
   }
