@@ -1736,6 +1736,7 @@
       "path": "microsoft.csharp/4.0.1",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -2117,6 +2118,7 @@
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "lib/net20/Newtonsoft.Json.dll",
         "lib/net20/Newtonsoft.Json.xml",
         "lib/net35/Newtonsoft.Json.dll",
@@ -2863,6 +2865,7 @@
       "path": "system.dynamic.runtime/4.0.11",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -5635,35 +5638,33 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\NashStokes\\.nuget\\packages\\": {}
+    "/Users/nashstokes/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\NashStokes\\RiderProjects\\gilded-rose-challenge\\GildedRoseChallenge_Test\\GildedRoseChallenge_Test.csproj",
+      "projectUniqueName": "/Users/nashstokes/RiderProjects/gilded-rose-challenge/GildedRoseChallenge_Test/GildedRoseChallenge_Test.csproj",
       "projectName": "GildedRoseChallenge_Test",
-      "projectPath": "C:\\Users\\NashStokes\\RiderProjects\\gilded-rose-challenge\\GildedRoseChallenge_Test\\GildedRoseChallenge_Test.csproj",
-      "packagesPath": "C:\\Users\\NashStokes\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\NashStokes\\RiderProjects\\gilded-rose-challenge\\GildedRoseChallenge_Test\\obj\\",
+      "projectPath": "/Users/nashstokes/RiderProjects/gilded-rose-challenge/GildedRoseChallenge_Test/GildedRoseChallenge_Test.csproj",
+      "packagesPath": "/Users/nashstokes/.nuget/packages/",
+      "outputPath": "/Users/nashstokes/RiderProjects/gilded-rose-challenge/GildedRoseChallenge_Test/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\NashStokes\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/nashstokes/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {},
-        "https://nexus.integrate.ninja/": {}
+        "https://nexus.integrate.ninja/repository/nuget-group/": {}
       },
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\NashStokes\\RiderProjects\\gilded-rose-challenge\\GildedRoseChallenge\\GildedRoseChallenge.csproj": {
-              "projectPath": "C:\\Users\\NashStokes\\RiderProjects\\gilded-rose-challenge\\GildedRoseChallenge\\GildedRoseChallenge.csproj"
+            "/Users/nashstokes/RiderProjects/gilded-rose-challenge/GildedRoseChallenge/GildedRoseChallenge.csproj": {
+              "projectPath": "/Users/nashstokes/RiderProjects/gilded-rose-challenge/GildedRoseChallenge/GildedRoseChallenge.csproj"
             }
           }
         }
@@ -5714,7 +5715,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.300/RuntimeIdentifierGraph.json"
       }
     }
   }

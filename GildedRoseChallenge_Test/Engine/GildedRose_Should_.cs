@@ -93,17 +93,27 @@ namespace GildedRoseChallenge_Test.Engine
         }
         
         [Theory]
-        [InlineData(10, 10, 9)]
-        [InlineData(0, 10, 0)]
-        public void Update_The_Quality_Of_Conjured_Item_To_Decrease_With_Time(int testQuality, int sellIn,
+        [InlineData("[Conjured] Normal item", 10, 10, 8)]
+        [InlineData("[Conjured] Backstage passes to a TAFKAL80ETC concert", 10, 11, 12)]
+        [InlineData("[Conjured] Backstage passes to a TAFKAL80ETC concert", 10, 10, 14)]
+        [InlineData("[Conjured] Backstage passes to a TAFKAL80ETC concert", 10, 5, 16)]
+        [InlineData("[Conjured] Backstage passes to a TAFKAL80ETC concert", 10, -1, 0)]
+        [InlineData("[Conjured] Sulfuras, Hand of Ragnaros", 80, 10, 80)]
+        [InlineData("[Conjured] Aged Brie", 50, 11, 50)]
+        [InlineData("[Conjured] Aged Brie", 10, -1, 14)]
+        [InlineData("[Conjured] Aged Brie", 10, 1, 12)]
+
+        public void Update_The_Quality_Of_Conjured_Item_To_Change_With_Time(String itemName, int testQuality, int sellIn,
             int expectedQuality)
         {
             Item testItem = new Item
             {
-                Name = "Normal Item",
+                Name = itemName,
                 Quality = testQuality,
                 SellIn = sellIn
             };
+            
+            _testOutputHelper.WriteLine(testItem.Name[0].ToString());
 
             var items = new List<Item> { testItem };
 
@@ -118,8 +128,8 @@ namespace GildedRoseChallenge_Test.Engine
         [Fact]
         public void Not_Update_The_Quality_Of_Sulfuras_To_Increase_With_Time()
         {
-            var testQuality = 10;
-            var expectedQuality = 10;
+            var testQuality = 80;
+            var expectedQuality = 80;
             Item testItem = new Item
             {
                 Name = "Sulfuras, Hand of Ragnaros",
