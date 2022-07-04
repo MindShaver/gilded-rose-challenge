@@ -19,7 +19,7 @@ namespace GildedRoseChallenge.Engine
                 if (t.Name.StartsWith("[Conjured]"))
                 {
                     isConjured = 1;
-                    t.Name = t.Name[10..];
+                    t.Name = t.Name[11..];
                 }
                 switch (t.Name)
                 {
@@ -57,6 +57,11 @@ namespace GildedRoseChallenge.Engine
                     break;
             }
 
+            if (brie.Quality < 0)
+            {
+                brie.Quality = 0;
+            }
+
             brie.SellIn--;
         }
         
@@ -67,7 +72,7 @@ namespace GildedRoseChallenge.Engine
                 backstagePass.SellIn--;
                 return;
             }
-
+            
             switch (backstagePass.SellIn)
             {
                 case < 0:
@@ -84,19 +89,28 @@ namespace GildedRoseChallenge.Engine
                     break;
             }
 
+            if (backstagePass.Quality < 0)
+            {
+                backstagePass.Quality = 0;
+            }
+
             backstagePass.SellIn--;
         }
         
-//TODO: Handle other normal item cases
         private static void UpdateNormalItem(Item normalItem, int isConjured)
         {
-            if (normalItem.Quality > 0 && normalItem.SellIn >= 0)
+            if (normalItem.SellIn >= 0)
             {
                 normalItem.Quality -= 1 + (1 * isConjured);
             }
-            else if (normalItem.Quality > 0 && normalItem.SellIn > 0)
+            else if (normalItem.SellIn < 0)
             {
                 normalItem.Quality -= 2 + (2 * isConjured);
+            }
+
+            if (normalItem.Quality < 0)
+            {
+                normalItem.Quality = 0;
             }
 
             normalItem.SellIn--;
