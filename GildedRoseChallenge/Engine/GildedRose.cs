@@ -34,7 +34,7 @@ namespace GildedRoseChallenge.Engine
                 }
             }
         }
-        public void UpdateQualityBrie(Item item)
+        public static void UpdateQualityBrie(Item item)
         {
             if (item.Quality >= 50)
             {
@@ -51,7 +51,7 @@ namespace GildedRoseChallenge.Engine
             }
         }
 
-        public void UpdateQualityBackstagePass(Item item)
+        public static void UpdateQualityBackstagePass(Item item)
         {
             
             //maybe switch to a switch?
@@ -77,7 +77,7 @@ namespace GildedRoseChallenge.Engine
                 item.Quality += 1;
             }
         }
-        public void UpdateQualityNormalItem(Item item)
+        public static void UpdateQualityNormalItem(Item item)
         {
             if (item.Quality == 0)
             {
