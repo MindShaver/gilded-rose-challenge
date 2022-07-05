@@ -185,6 +185,27 @@ namespace GildedRoseChallenge_Test.Engine
         }
         
         [Fact]
+        public void Not_Increase_Backstage_Pass_Quality_Above_Fifty()
+        {
+            var testQuality = 50;
+            var testItem = new Item
+            {
+                Name = "Backstage passes to a TAFKAL80ETC concert",
+                Quality = testQuality,
+                SellIn = 0
+            };
+
+            var items = new List<Item> { testItem };
+
+            var engine = new GildedRose(items);
+            engine.UpdateQuality();
+
+            var actualQuality = items.First().Quality;
+
+            Assert.Equal(50, actualQuality);
+        }
+        
+        [Fact]
         public void Maintain_Quality_For_Sulfuras()
         {
             var testQuality = 80;
