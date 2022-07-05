@@ -13,27 +13,27 @@ namespace GildedRoseChallenge.Engine
 
         public void UpdateQuality()
         {
-            foreach (var t in _items)
+            for (var index = 0; index < _items.Count; index++)
             {
+                var t = _items[index];
                 int isConjured = 0;
                 if (t.Name.StartsWith("[Conjured]"))
                 {
                     isConjured = 1;
                     t.Name = t.Name[11..];
                 }
-                switch (t.Name)
+
+                if (t.Name == "Aged Brie")
                 {
-                    case "Aged Brie":
-                        UpdateAgedBrie(t, isConjured);
-                        break;
-                    case "Backstage passes to a TAFKAL80ETC concert":
-                        UpdateBackstagePass(t, isConjured);
-                        break;
-                    case "Sulfuras, Hand of Ragnaros":
-                        break;
-                    default:
-                        UpdateNormalItem(t, isConjured);
-                        break;
+                    UpdateAgedBrie(t, isConjured);
+                }
+                else if (t.Name == "Backstage passes to a TAFKAL80ETC concert")
+                {
+                    UpdateBackstagePass(t, isConjured);
+                }
+                else if (t.Name != "Sulfuras, Hand of Ragnaros")
+                {
+                    UpdateNormalItem(t, isConjured);
                 }
             }
         }
@@ -47,15 +47,10 @@ namespace GildedRoseChallenge.Engine
                 return;
             }
 
-            switch (brie.SellIn)
-            {
-                case < 0:
-                    brie.Quality = brie.Quality + (2 * conjureMultiplier);
-                    break;
-                default:
-                    brie.Quality = brie.Quality + (1 * conjureMultiplier);
-                    break;
-            }
+            if (brie.SellIn < 0)
+                brie.Quality = brie.Quality + (2 * conjureMultiplier);
+            else
+                brie.Quality = brie.Quality + (1 * conjureMultiplier);
 
             if (brie.Quality < 0)
             {
@@ -72,22 +67,15 @@ namespace GildedRoseChallenge.Engine
                 backstagePass.SellIn--;
                 return;
             }
-            
-            switch (backstagePass.SellIn)
-            {
-                case < 0:
-                    backstagePass.Quality = 0;
-                    break;
-                case < 6:
-                    backstagePass.Quality += 3 + (3 * isConjured);
-                    break;
-                case < 11:
-                    backstagePass.Quality += 2 + (2 * isConjured);
-                    break;
-                default:
-                    backstagePass.Quality += 1 + (1 * isConjured);
-                    break;
-            }
+
+            if (backstagePass.SellIn < 0)
+                backstagePass.Quality = 0;
+            else if (backstagePass.SellIn < 6)
+                backstagePass.Quality += 3 + (3 * isConjured);
+            else if (backstagePass.SellIn < 11)
+                backstagePass.Quality += 2 + (2 * isConjured);
+            else
+                backstagePass.Quality += 1 + (1 * isConjured);
 
             if (backstagePass.Quality < 0)
             {
