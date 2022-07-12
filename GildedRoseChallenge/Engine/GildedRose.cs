@@ -54,12 +54,11 @@ namespace GildedRoseChallenge.Engine
         public static void UpdateQualityBackstagePass(Item item)
         {
             
-            //maybe switch to a switch?
             if (item.Quality >= 50)
             {
                 return;
             }
-
+            
             if (item.SellIn < 0)
             {
                 item.Quality = 0;
@@ -68,11 +67,11 @@ namespace GildedRoseChallenge.Engine
             
             item.Quality += 1;
             
-            if (item.SellIn < 6 && item.SellIn >= 0)
+            if (item.SellIn < 6)
             {
                 item.Quality +=2;
             }
-            else if (item.SellIn < 11 && item.SellIn > 5)
+            else if (item.SellIn < 11)
             {
                 item.Quality += 1;
             }
@@ -85,12 +84,8 @@ namespace GildedRoseChallenge.Engine
             }
 
             if (item.Name.StartsWith("[Conjured]"))
-            {
-                item.Quality -= 2;
-                if (item.SellIn < 0 && item.Quality > 0)
-                {
-                    item.Quality -= 2;
-                }
+            { 
+                UpdateQualityConjuredItem(item);
                 return;
             }
 
@@ -101,7 +96,17 @@ namespace GildedRoseChallenge.Engine
                 item.Quality -= 1;
             }
         }
+        
+        public static void UpdateQualityConjuredItem(Item item)
+        {
+            item.Quality -= 2;
+            if (item.SellIn < 0 && item.Quality > 0)
+            {
+                item.Quality -= 2;
+            }
+        }
     }
+  
     
     public class Item
     {
