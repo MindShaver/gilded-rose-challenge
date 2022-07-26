@@ -29,7 +29,7 @@ namespace GildedRoseChallenge.Engine
                 }
                 else if (t.Name == "Backstage passes to a TAFKAL80ETC concert")
                 {
-                    UpdateBackstagePass(t, isConjured);
+                    BackstagePass.UpdateBackstagePass(t, isConjured);
                 }
                 else if (t.Name != "Sulfuras, Hand of Ragnaros")
                 {
@@ -59,32 +59,7 @@ namespace GildedRoseChallenge.Engine
 
             brie.SellIn--;
         }
-        
-        private static void UpdateBackstagePass(Item backstagePass, int isConjured)
-        {
-            if (backstagePass.Quality >= 50)
-            {
-                backstagePass.SellIn--;
-                return;
-            }
 
-            if (backstagePass.SellIn < 0)
-                backstagePass.Quality = 0;
-            else if (backstagePass.SellIn < 6)
-                backstagePass.Quality += 3 + (3 * isConjured);
-            else if (backstagePass.SellIn < 11)
-                backstagePass.Quality += 2 + (2 * isConjured);
-            else
-                backstagePass.Quality += 1 + (1 * isConjured);
-
-            if (backstagePass.Quality < 0)
-            {
-                backstagePass.Quality = 0;
-            }
-
-            backstagePass.SellIn--;
-        }
-        
         private static void UpdateNormalItem(Item normalItem, int isConjured)
         {
             if (normalItem.SellIn >= 0)

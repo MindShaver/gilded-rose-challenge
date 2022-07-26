@@ -20,6 +20,8 @@
           "net5.0"
         ],
         "sources": {
+          "/Users/nashstokes/.nuget/packages/": {},
+          "/Users/nashstokes/RiderProjects/Integrate.Contracts/Integrate.Contracts/bin/Debug": {},
           "https://api.nuget.org/v3/index.json": {},
           "https://nexus.integrate.ninja/repository/nuget-group/": {}
         },
@@ -53,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.300/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.301/RuntimeIdentifierGraph.json"
         }
       }
     }
