@@ -1,6 +1,6 @@
 namespace GildedRoseChallenge.Engine
 {
-    public class BackstagePass
+    public static class BackstagePass
     {
         public static void UpdateBackstagePass(Item backstagePass, int isConjured)
         {
