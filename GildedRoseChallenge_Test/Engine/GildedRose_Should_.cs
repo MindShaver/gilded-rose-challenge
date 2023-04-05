@@ -118,12 +118,11 @@ public class GildedRose_Should_
     [Fact]
     void Not_Update_The_Quality_Of_Sulfuras()
     {
-        const int testQuality = 80;
-        const int expectedQuality = testQuality;
+        const int expectedQuality = 80;
         var testItem = new Item
         {
             Name = "Backstage passes to a TAFKAL80ETC concert",
-            Quality = testQuality,
+            Quality = expectedQuality,
             SellIn = 60
         };
 
