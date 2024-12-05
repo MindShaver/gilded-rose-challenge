@@ -32,6 +32,9 @@ bld/
 [Ll]ogs/
 */[Oo]bj/**
 */[Bb]in/**
+GildedRose_Test/obj/*
+GildedRose_Test/bin/*
+GildedRose.sln.*
 
 
 # Visual Studio 2015/2017 cache/options directory
