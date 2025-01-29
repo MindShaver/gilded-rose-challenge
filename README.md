@@ -10,16 +10,12 @@
 ### The Challenge:
 
 - Complete the User Story (US897387)
-- Resolve the Defect (DE783598)
-- Create a PR with a passing build
 
 ### How To Use This Project
 
-- Clone the repository and create a new branch using the template `solution/${last name}-attempt-${favorite animal}`
+- Clone the repository and create a new branch
 - The Gilded Rose's system can only be used through **Tests**
 - Leeroy added one test to show how the system is used
-- Once you create a PR GitHub Actions will analyze your code using SonarCloud
-- Visit the SonarCloud Dashboard by clicking the "Build Status" above
 
 ### Description
 
@@ -31,16 +27,11 @@ date. We have a system in place that updates our inventory for us. It was
 developed by a no-nonsense type named Leeroy, who has moved on to new 
 adventures.
 
-Leeroy wasn't that big on tests. While
-he did get our system out there it seems to have a bug. Also, we need to add a little bit of new functionality to the software.
-
-The patrons have been complaining that their Aged Brie isn't as aged as we say it is.
-There must be something wrong with how the quality is being updated but, the owners
-can't understand the code enough to take a stab at it.
+Leeroy wasn't that big on tests. While he did get our system out there we need to add a little bit of new functionality to the software.
 
 This is where you come in!
 
-Your task is to fix the bug and add the new feature to our system so that we 
+Add the new feature to our system so that we 
 can begin selling a new category of items. First an introduction to our 
 system:
 
@@ -74,11 +65,6 @@ GIVEN an Item with the prefix [Conjured] is in the System
 WHEN UpdateQuality is run
 THEN the Conjured Item's Quality is reduced by TWO
 ```
-
-### DE783598 - Aged Brie is aging too quickly
-
-Our patrons are saying that their Aged Brie isn't as aged as we are saying.
-Refer to the documentation for Aged Brie requirements
 
 ## Conclusion
 
