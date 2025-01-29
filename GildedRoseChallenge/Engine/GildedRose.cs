@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace GildedRoseChallenge
+namespace GildedRoseChallenge.Engine
 {
     public class GildedRose
     {
@@ -13,7 +13,6 @@ namespace GildedRoseChallenge
 
         public void UpdateQuality()
         {
-
             for (var i = 0; i < Items.Count; i++)
             {
                 if (Items[i].Name != "Aged Brie" && Items[i].Name != "Backstage passes to a TAFKAL80ETC concert")
@@ -30,10 +29,13 @@ namespace GildedRoseChallenge
                 {
                     if (Items[i].Quality < 50)
                     {
-                        Items[i].Quality = Items[i].Quality + 1;
-
                         if (Items[i].Name == "Backstage passes to a TAFKAL80ETC concert")
                         {
+                            Items[i].Quality = Items[i].Quality + 1;
+
+
+
+
                             if (Items[i].SellIn < 11)
                             {
                                 if (Items[i].Quality < 50)
@@ -50,6 +52,11 @@ namespace GildedRoseChallenge
                                 }
                             }
                         }
+
+                        if(Items[i].Name == "Aged Brie")
+                        {
+                            Items[i].Quality = Items[i].Quality + 1;
+                        } 
                     }
                 }
 
@@ -75,6 +82,7 @@ namespace GildedRoseChallenge
                         else
                         {
                             Items[i].Quality = Items[i].Quality - Items[i].Quality;
+
                         }
                     }
                     else
@@ -85,9 +93,14 @@ namespace GildedRoseChallenge
                         }
                     }
                 }
+
+                if (Items[i].Name == "Sulfuras, Hand of Ragnaros")
+                {
+                    Items[i].SellIn = 100;
+                    Items[i].Quality = 80;
+                }
             }
         }
-
     }
 
     public class Item

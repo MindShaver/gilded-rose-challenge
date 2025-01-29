@@ -1,37 +1,39 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\minds\\Desktop\\gilded-rose-challenge\\GildedRoseChallenge_Test\\GildedRoseChallenge_Test.csproj": {}
+    "C:\\Users\\H6RP9\\Desktop\\projects\\gilded-rose-training\\GildedRoseChallenge_Test\\GildedRoseChallenge_Test.csproj": {}
   },
   "projects": {
-    "C:\\Users\\minds\\Desktop\\gilded-rose-challenge\\GildedRoseChallenge\\GildedRoseChallenge.csproj": {
+    "C:\\Users\\H6RP9\\Desktop\\projects\\gilded-rose-training\\GildedRoseChallenge\\GildedRoseChallenge.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\minds\\Desktop\\gilded-rose-challenge\\GildedRoseChallenge\\GildedRoseChallenge.csproj",
+        "projectUniqueName": "C:\\Users\\H6RP9\\Desktop\\projects\\gilded-rose-training\\GildedRoseChallenge\\GildedRoseChallenge.csproj",
         "projectName": "GildedRoseChallenge",
-        "projectPath": "C:\\Users\\minds\\Desktop\\gilded-rose-challenge\\GildedRoseChallenge\\GildedRoseChallenge.csproj",
-        "packagesPath": "C:\\Users\\minds\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\minds\\Desktop\\gilded-rose-challenge\\GildedRoseChallenge\\obj\\",
+        "projectPath": "C:\\Users\\H6RP9\\Desktop\\projects\\gilded-rose-training\\GildedRoseChallenge\\GildedRoseChallenge.csproj",
+        "packagesPath": "C:\\Users\\H6RP9\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\H6RP9\\Desktop\\projects\\gilded-rose-training\\GildedRoseChallenge\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\minds\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\H6RP9\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net5.0"
+          "net8.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://alm.rgbk.com/artifactory/api/nuget/local-nuget-internal": {},
+          "https://alm.rgbk.com/artifactory/api/nuget/local-nuget-vendor": {},
+          "https://alm.rgbk.com/artifactory/api/nuget/local-rdo-nuget": {},
+          "https://alm.rgbk.com/artifactory/api/nuget/tsa-nuget": {},
+          "https://alm.rgbk.com/artifactory/api/nuget/v3/nuget": {},
+          "https://alm.rgbk.com/artifactory/api/nuget/v3/remote-nuget": {},
+          "https://alm.rgbk.com/artifactory/api/nuget/v3/tsa-nuget": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {}
           }
         },
@@ -42,15 +44,16 @@
         }
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "imports": [
             "net461",
             "net462",
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -59,41 +62,43 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\minds\\Desktop\\gilded-rose-challenge\\GildedRoseChallenge_Test\\GildedRoseChallenge_Test.csproj": {
+    "C:\\Users\\H6RP9\\Desktop\\projects\\gilded-rose-training\\GildedRoseChallenge_Test\\GildedRoseChallenge_Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\minds\\Desktop\\gilded-rose-challenge\\GildedRoseChallenge_Test\\GildedRoseChallenge_Test.csproj",
+        "projectUniqueName": "C:\\Users\\H6RP9\\Desktop\\projects\\gilded-rose-training\\GildedRoseChallenge_Test\\GildedRoseChallenge_Test.csproj",
         "projectName": "GildedRoseChallenge_Test",
-        "projectPath": "C:\\Users\\minds\\Desktop\\gilded-rose-challenge\\GildedRoseChallenge_Test\\GildedRoseChallenge_Test.csproj",
-        "packagesPath": "C:\\Users\\minds\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\minds\\Desktop\\gilded-rose-challenge\\GildedRoseChallenge_Test\\obj\\",
+        "projectPath": "C:\\Users\\H6RP9\\Desktop\\projects\\gilded-rose-training\\GildedRoseChallenge_Test\\GildedRoseChallenge_Test.csproj",
+        "packagesPath": "C:\\Users\\H6RP9\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\H6RP9\\Desktop\\projects\\gilded-rose-training\\GildedRoseChallenge_Test\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\minds\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\H6RP9\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net5.0"
+          "net8.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://alm.rgbk.com/artifactory/api/nuget/local-nuget-internal": {},
+          "https://alm.rgbk.com/artifactory/api/nuget/local-nuget-vendor": {},
+          "https://alm.rgbk.com/artifactory/api/nuget/local-rdo-nuget": {},
+          "https://alm.rgbk.com/artifactory/api/nuget/tsa-nuget": {},
+          "https://alm.rgbk.com/artifactory/api/nuget/v3/nuget": {},
+          "https://alm.rgbk.com/artifactory/api/nuget/v3/remote-nuget": {},
+          "https://alm.rgbk.com/artifactory/api/nuget/v3/tsa-nuget": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\minds\\Desktop\\gilded-rose-challenge\\GildedRoseChallenge\\GildedRoseChallenge.csproj": {
-                "projectPath": "C:\\Users\\minds\\Desktop\\gilded-rose-challenge\\GildedRoseChallenge\\GildedRoseChallenge.csproj"
+              "C:\\Users\\H6RP9\\Desktop\\projects\\gilded-rose-training\\GildedRoseChallenge\\GildedRoseChallenge.csproj": {
+                "projectPath": "C:\\Users\\H6RP9\\Desktop\\projects\\gilded-rose-training\\GildedRoseChallenge\\GildedRoseChallenge.csproj"
               }
             }
           }
@@ -105,8 +110,8 @@
         }
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "dependencies": {
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
@@ -135,7 +140,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -144,7 +150,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
